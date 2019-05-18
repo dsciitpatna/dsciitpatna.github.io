@@ -593,3 +593,9 @@ ul {
 .team-area .social li.instagram a {
   background-color: #cd486b;
 }
+
+/* custom */
+
+.row.team-items{
+  margin-bottom: 100px;
+}
