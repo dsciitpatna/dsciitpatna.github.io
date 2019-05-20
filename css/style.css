@@ -127,21 +127,21 @@ h6 {
 
 #intro {
   width: 100%;
-  height: 91vh;
-  background:  url("../img/gif.gif");
+  height: 98vh;
+  background:  url("../img/nn.gif");
   background-repeat: no-repeat;
-  background-position: top left;
-  background-size:  1520px 730px;
+  background-size: cover;
   
+
 }
+
   
 #intro .intro-text {
   position: absolute;
-  left: 350px;
+  left: 0;
   top: 160px;
-  right: 318px;
+  right: 0;
   height: calc(50% - 60px);
-  background-color: rgb(253, 253, 253);
   background-attachment: fixed;
   display: -webkit-box;
   display: -webkit-flex;
@@ -167,8 +167,8 @@ h6 {
 #intro h2 {
   margin: 30px 0 10px 0;
   padding: 0 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 67px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 70px;
   font-weight: 500;
   line-height: 56px;
   color: black;
@@ -633,7 +633,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("../img/background-blur-clean-531880.jpg");
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
   
   
 }
