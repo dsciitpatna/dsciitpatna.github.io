@@ -631,6 +631,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 #social {
   padding: 60px 0 60px 0;
   overflow: hidden;
+  background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("../img/background-blur-clean-531880.jpg");
+  background-size: cover;
+  background-position: center;
+  
+  
 }
 
 #social .box {
