@@ -43,8 +43,7 @@
 
 
 
-
-        <!-- Load Facebook SDK for JavaScript -->
+      <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>
         window.fbAsyncInit = function() {
@@ -61,6 +60,12 @@
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="2181729528574999">
+      </div>
 
    
 
@@ -425,23 +430,11 @@
             <a href="#intro" class="scrollto">Home</a>
             <a href="#about" class="scrollto">About</a>
 
-            <div class="fb-messengermessageus" 
+            <!-- <div class="fb-messengermessageus" 
                 messenger_app_id="998496020361120" 
                 page_id="2181729528574999"
                 color="blue"
                 size="xlarge">
-              </div>
-          
-
-              <!-- <div class="fb-customerchat"
-              page_id="2181729528574999"
-              minimized="false">
-              </div> -->
-
-              <!-- Your customer chat code -->
-              <!-- <div class="fb-customerchat"
-              attribution=setup_tool
-              page_id="2181729528574999">
               </div> -->
 
           </nav>
