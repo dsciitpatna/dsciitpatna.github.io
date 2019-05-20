@@ -28,12 +28,47 @@
 </head>
 
 <body>
+    <!-- facebook sdk
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '998496020361120',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v3.3'
+          });
+        };
+      </script>
+      <script async defer src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"></script> -->
+
+
+
+
+        <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v3.3'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+   
+
   <!--==========================
     Header
   ============================-->
   <header id="header">
     <div class="container">
-
       <div id="logo" class="pull-left">
         <h1><a href="#intro"><img src="img/logo.png" alt="" title="" width="30%"></a></h1>
       </div>
@@ -291,7 +326,7 @@
 
           <div class="col-lg-4">
             <div class="box wow fadeInLeft">
-              <div>
+              <div style="margin: 20px 0">
                 <iframe 
                   src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdsciitpatna%2F%3F__tn__%3D%252CdkC-y.g-R%26eid%3DARALxTPcGtjxlp3B9MGmnC73Ol4fJzWTRbBv_Lz-wITcjCAa2Ctc33j-hSs7lJkg6kjBETZ0kdwuCgwn%26hc_ref%3DARQRs_qR1gWmuGCtB5fl_dxXtPf-Izype3sJgcboW2eIWoFMSYeh4SVxoVKXzuxzQQQ%26fref%3Dnf&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"  
                   style="border:none; margin: 0; padding: 0; overflow:hidden; width:100%; height:400px" 
@@ -303,7 +338,9 @@
 
           <div class="col-lg-4">
             <div class="box wow fadeInLeft">
+              <div style="margin: 20px 0">
                 <a class="twitter-timeline" data-width="340" data-height="400" href="https://twitter.com/dsciitpatna?ref_src=twsrc%5Etfw">Tweets by dsciitpatna</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
             </div>
         </div>
 
@@ -317,7 +354,15 @@
       </div>
     </section><!-- #social -->
 
-
+    <!--==========================
+      Map Section
+    ============================-->
+    <section id="map" style="height: calc( 60vh )">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721" 
+        width="100%" height="100%" frameborder="0" style="border: 0" allowfullscreen>
+      </iframe>
+    </section>
 
     <!--==========================
       Contact Section
@@ -328,7 +373,7 @@
 
           <div class="col-lg-4 col-md-4">
             <div class="contact-about">
-              <h3>Avilon</h3>
+              <h3>DSC IIT Patna</h3>
               <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
               <div class="social-links">
                 <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
@@ -365,15 +410,6 @@
       </div>
     </section><!-- #contact -->
 
-    <!--==========================
-      Map Section
-    ============================-->
-    <section id="map" style="height: calc( 60vh )">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721" 
-        width="100%" height="100%" frameborder="0" style="border: 0" allowfullscreen>
-      </iframe>
-    </section>    
 
   </main>
 
@@ -382,27 +418,32 @@
   ============================-->
   <footer id="footer">
     <div class="container">
+        
       <div class="row">
-        <div class="col-lg-6 text-lg-left text-center">
-          <div class="copyright">
-            &copy; Copyright <strong>Avilon</strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Avilon
-            -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
-        </div>
-        <div class="col-lg-6">
+        <div class="col-lg-12 text-right ">
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
             <a href="#intro" class="scrollto">Home</a>
             <a href="#about" class="scrollto">About</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
+
+            <div class="fb-messengermessageus" 
+                messenger_app_id="998496020361120" 
+                page_id="2181729528574999"
+                color="blue"
+                size="xlarge">
+              </div>
+          
+
+              <!-- <div class="fb-customerchat"
+              page_id="2181729528574999"
+              minimized="false">
+              </div> -->
+
+              <!-- Your customer chat code -->
+              <!-- <div class="fb-customerchat"
+              attribution=setup_tool
+              page_id="2181729528574999">
+              </div> -->
+
           </nav>
         </div>
       </div>
@@ -426,6 +467,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
 
 </body>
 </html>
