@@ -28,12 +28,47 @@
 </head>
 
 <body>
+    <!-- facebook sdk
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '998496020361120',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v3.3'
+          });
+        };
+      </script>
+      <script async defer src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"></script> -->
+
+
+
+
+        <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v3.3'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+   
+
   <!--==========================
     Header
   ============================-->
   <header id="header">
     <div class="container">
-
       <div id="logo" class="pull-left">
         <h1><a href="#intro"><img src="img/logo.png" alt="" title="" width="30%"></a></h1>
       </div>
@@ -381,14 +416,32 @@
   ============================-->
   <footer id="footer">
     <div class="container">
+        
       <div class="row">
-    
         <div class="col-lg-12 text-right ">
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
             <a href="#intro" class="scrollto">Home</a>
             <a href="#about" class="scrollto">About</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
+
+            <div class="fb-messengermessageus" 
+                messenger_app_id="998496020361120" 
+                page_id="2181729528574999"
+                color="blue"
+                size="xlarge">
+              </div>
+          
+
+              <!-- <div class="fb-customerchat"
+              page_id="2181729528574999"
+              minimized="false">
+              </div> -->
+
+              <!-- Your customer chat code -->
+              <!-- <div class="fb-customerchat"
+              attribution=setup_tool
+              page_id="2181729528574999">
+              </div> -->
+
           </nav>
         </div>
       </div>
@@ -412,6 +465,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
 
 </body>
 </html>
