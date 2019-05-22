@@ -236,8 +236,8 @@
       Product Advanced Featuress Section
     ============================-->
     <section id="advanced-features">
-<!--
-      <div class="features-row section-bg">
+
+     <!-- <div class="features-row section-bg">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -251,13 +251,13 @@
             </div>
           </div>
         </div>
-      </div>
-    -->
+      </div>-->
+    
       <div class="features-row section-bg">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <img class="advanced-feature-img-left" src="img/india (1).png" alt="" style="width: 37em;height:20em"> 
+              <img class="advanced-feature-img-left" src="img/advanced-feature-2.jpg" alt="" style="width: 37em;height:20em">
               <div class="wow fadeInRight">
                 <h2>The students get the opportunity to:</h2>
                 <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-duration="0.5s"></i>
@@ -292,13 +292,13 @@
     --> 
     </section><!-- #advanced-features -->
 
-     
+   
     <!--==========================
       Videos Section
     ============================-->
     <section id="features">
       <div class="container">
-        <div class="row">
+         <div class="row">
           <div class="col-lg-4 wow fadeInLeft">
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/wTLe8nwJ_Lw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -314,7 +314,7 @@
       
     </section>
           
-          
+         
 
     <!--==========================
       Social Section
@@ -325,7 +325,7 @@
         <div class="section-header">
           <h3 class="section-title">Social</h3>
           <span class="section-divider"></span>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description"></p>
         </div>
 
         <div class="row">
@@ -376,8 +376,7 @@
     <section id="contact">
       <div class="container">
         <div class="row wow fadeInUp d-flex justify-content-center">
-
-          <div class="col-lg-4 col-md-4">
+         <div class="col-lg-4 col-md-4">
             <div class="contact-about">
               <h3>DSC IIT Patna</h3>
               <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
@@ -389,6 +388,7 @@
                 <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
+            
           </div>
 
           <div class="col-lg-4 col-md-4">
@@ -409,6 +409,7 @@
               </div>
 
             </div>
+           
           </div>
 
         </div>

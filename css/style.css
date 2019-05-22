@@ -501,6 +501,7 @@ body.mobile-nav-active #mobile-nav-toggle {
  
 }
 
+
 #features .features-img {
   text-align: center;
   padding-top: 20px;
@@ -610,10 +611,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 #advanced-features .advanced-feature-img-left {
   max-width: 100%;
   float: left;
- box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5); 
+  
   
 }
-
 
 
 
