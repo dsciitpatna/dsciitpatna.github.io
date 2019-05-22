@@ -1,3 +1,6 @@
+<?php 
+  require('config/config.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,12 +73,13 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li class="menu-active"><a href="<?php echo ROOT_URL; ?>#intro">Home</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>#about">About Us</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>#features">Features</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>gallery.php">Gallery</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>team.php">Team</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>#contact">Contact Us</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>leaderboard.php">Leaderboard</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
