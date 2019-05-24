@@ -28,6 +28,31 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <style>
+    @media only screen and (max-width: 766px) {
+      
+.desktop{
+  display:none;
+}
+.mobile{
+  display:inline;
+}
+
+
+
+}
+@media only screen and (min-width: 767px) {
+
+  .mobile {display:none;}
+  .desktop{display:inline;}
+  
+  }
+  @media only screen and (min-width: 1525px) {
+
+    .mobile {display:none;}
+    
+    }
+  </style>
 </head>
 
 <body>
@@ -376,6 +401,14 @@
     <section id="contact">
       <div class="container">
         <div class="row wow fadeInUp d-flex justify-content-center">
+        <div class="col-lg-4 col-md-4">
+            <div class="desktop">
+               <img  src="img/indiarot.png" style="width:6em;height:13em; float:right;" >
+              </div>
+              <div class="mobile">
+              <img id="mobile" src="img/india (1).png" style="width:18em;height:7em;float:left;">
+              </div>
+          </div>
          <div class="col-lg-4 col-md-4">
             <div class="contact-about">
               <h3>DSC IIT Patna</h3>
@@ -411,6 +444,8 @@
             </div>
            
           </div>
+
+          
 
         </div>
 
