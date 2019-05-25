@@ -29,7 +29,7 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <style>
-    @media only screen and (max-width: 766px) {
+    @media only screen and (max-width: 768px) {
       
 .desktop{
   display:none;
@@ -41,7 +41,7 @@
 
 
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 
   .mobile {display:none;}
   .desktop{display:inline;}
@@ -325,7 +325,7 @@
       <div class="container">
          <div class="row">
           <div class="col-lg-4 wow fadeInLeft">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/wTLe8nwJ_Lw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/AAin71VkbzQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
           <div class="col-lg-4 wow fadeInRight">
@@ -333,10 +333,10 @@
           </div>
 
           <div class="col-lg-4 wow fadeInRight">
-              <iframe width="100%" height="315" src="https://www.youtube.com/embed/wTLe8nwJ_Lw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/uxDuZs9k8B0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div> 
         </div>
-      
+       
     </section>
           
          
@@ -428,7 +428,7 @@
             <div class="info">
               <div>
                 <i class="ion-ios-location-outline"></i>
-                <p>A108 Adam Street<br>New York, NY 535022</p>
+                <p>Indian Institute of Technology Patna<br> Bihta, Patna -801106 (Bihar)</p>
               </div>
 
               <div>
@@ -462,12 +462,52 @@
     <div class="container">
         
       <div class="row">
-        <div class="col-lg-12 text-right ">
-          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#intro" class="scrollto">Home</a>
-            <a href="#about" class="scrollto">About</a>
-          </nav>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <strong>Quick Links:</strong>
+          <br><br>
+          <a href="https://www.iitp.ac.in/">IIT Patna</a>
+          <br>
+          <a href="https://www.iitp.ac.in/hostel/reachIITP.html">Reach Us</a>
+          <br>
+          <br>
+          <br>
+          
         </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <strong>Social Links:</strong>
+          <br><br>
+          <a href="https://www.facebook.com/dsciitpatna/">
+          <i class="fa fa-facebook-square">
+          </i>
+          Developer Student Club
+          </a>
+          <br>
+          <a href="https://www.facebook.com/iitp.ac.in/">
+          <i class="fa fa-facebook-square">
+           </i>
+          IIT Patna
+          </a>
+          <br>
+          <br>
+          <br>
+          
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+         <strong>Back To:</strong>
+         <br><br>
+         <a href="#intro" class="scrollto">Home</a>
+         <br>
+         <a href="#about" class="scrollto">About</a>
+         <br>
+          <br>
+          <br>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+         <strong>Copyright ©</strong> 
+        <br>
+        <strong>Indian Institute of Technology, Patna</strong>
+         </div>
+         <br><br>
       </div>
     </div>
   </footer><!-- #footer -->
