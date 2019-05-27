@@ -95,6 +95,7 @@
           <li><a href="<?php echo ROOT_URL; ?>team.php">Team</a></li>
           <li><a href="<?php echo ROOT_URL; ?>#contact">Contact Us</a></li>
           <li><a href="<?php echo ROOT_URL; ?>leaderboard.php">Leaderboard</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>timeline.php">Timeline</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -104,7 +105,7 @@
     <!--==========================
       Timeline Section
     ============================-->
-    <div style="height: 200vh">
+    <div style="height: 80px">
 
 
     </div>
@@ -113,7 +114,7 @@
 		<table class="table table-hover text-center shadow bg-light">
 			<thead>
 			<tr>
-                <th>S.No.</th>
+        <th>S.No.</th>
 				<th>Title</th>
 				<th>Short Desc</th>
 				<th>Long Desc</th>
@@ -134,8 +135,8 @@
 							<td><?php echo $i++;?></td>
 							<td><?php echo $event['title'] ?></td>
 							<td><?php echo $event['short_desc'] ?></td>
-                            <td><?php echo $event['long_desc'] ?></td>
-                            <td><?php echo $event['date'] ?></td>
+              <td><?php echo $event['long_desc'] ?></td>
+              <td><?php echo $event['date'] ?></td>
 						</tr>
 				<?php endforeach; ?>
 			</tbody>

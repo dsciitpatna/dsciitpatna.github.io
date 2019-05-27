@@ -76,6 +76,7 @@
           <li><a href="<?php echo ROOT_URL; ?>team.php">Team</a></li>
           <li><a href="<?php echo ROOT_URL; ?>#contact">Contact Us</a></li>
           <li><a href="<?php echo ROOT_URL; ?>leaderboard.php">Leaderboard</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>timeline.php">Timeline</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
