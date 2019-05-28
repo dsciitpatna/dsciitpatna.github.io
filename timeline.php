@@ -1,27 +1,28 @@
 <?php
-	require('config/config.php');
-	require('config/db.php');
-	session_start();
+require('config/config.php');
+require('config/db.php');
+session_start();
 
-	// Create Query
-	$query = 'SELECT * FROM timeline ORDER BY date DESC';
+// Create Query
+$query = 'SELECT * FROM timeline ORDER BY date DESC';
 
-	// Get Result
-	$result = mysqli_query($mysqli, $query);
+// Get Result
+$result = mysqli_query($mysqli, $query);
 
-	// Fetch Data
-	$events = mysqli_fetch_all($result, MYSQLI_ASSOC);
+// Fetch Data
+$events = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-	// Free Result
-	mysqli_free_result($result);
-	
-	// Close Connection
-	mysqli_close($mysqli);
+// Free Result
+mysqli_free_result($result);
+
+// Close Connection
+mysqli_close($mysqli);
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>DSC IITP</title>
@@ -47,34 +48,35 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/timeline.css" rel="stylesheet">
 </head>
 
 <body>
 
-        <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
-        <script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              xfbml            : true,
-              version          : 'v3.3'
-            });
-          };
-  
-          (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-  
-        <!-- Your customer chat code -->
-        <div class="fb-customerchat"
-          attribution=setup_tool
-          page_id="2181729528574999">
-        </div>
-  
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml: true,
+        version: 'v3.3'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="2181729528574999">
+  </div>
+
 
   <!--==========================
     Header
@@ -102,54 +104,70 @@
   </header><!-- #header -->
 
 
-    <!--==========================
+  <!--==========================
       Timeline Section
     ============================-->
-    <div style="height: 80px">
+  <div style="height: 160px">
 
 
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+
+        <?php $i = 0;
+        foreach ($events as $event) : ?>
+          <?php if ( $i%2==0 ) { $i++; ?>
+            <li class='timeline-straight'>
+            <a href="">
+              <div class='timeline-image'>
+                <img class=' rounded-circle img-fluid img_url' src="" alt="">
+              </div>
+            </a>
+            <div class='timeline-panel'>
+              <div class='timeline-heading'>
+                <h4 class='date'><?php echo $event['date']?></h4>
+                <h4 class='subheading title'><?php echo $event['title']?></h4>
+              </div>
+              <div class='timeline-body'>
+                <p class='details short_desc'><?php echo $event['short_desc']?></p>
+                <p class='details long_desc'><?php echo $event['long_desc']?></p>
+              </div>
+            </div>
+          </li>
+        <?php } else { $i++; ?>
+          <li class='timeline-inverted'><a href="">
+              <div class='timeline-image'><img class='rounded-circle img-fluid img_url' src="" alt=""></div>
+            </a>
+            <div class='timeline-panel'>
+              <div class='timeline-heading'>
+                <h4 class='date'><?php echo $event['date']?></h4>
+                <h4 class='subheading title'><?php echo $event['title']?></h4>
+              </div>
+              <div class='timeline-body'>
+                <p class='details short_desc'><?php echo $event['short_desc']?></p>
+                <p class='details long_desc'><?php echo $event['long_desc']?></p>
+              </div>
+            </div>
+          </li>
+          <?php } ?>
+
+        <?php endforeach; ?>
+        </ul>
+      </div>
     </div>
-    
-    <div class="container">
-		<table class="table table-hover text-center shadow bg-light">
-			<thead>
-			<tr>
-        <th>S.No.</th>
-				<th>Title</th>
-				<th>Short Desc</th>
-				<th>Long Desc</th>
-				<th>Date</th>
-			</tr>
-			</thead>
-			<tbody>
-				<?php $i=1;
-					foreach($events as $event) : ?>
-						<?php 
-							// $point=$post['points'];
-							// if ( $point>=0 && $point <=50 ) {
-							// 	$class="fas fa-baby";
-							// 	$bgcolor="#FA8072";
-							// }
-						?>
-						<tr style="background: yellow">
-							<td><?php echo $i++;?></td>
-							<td><?php echo $event['title'] ?></td>
-							<td><?php echo $event['short_desc'] ?></td>
-              <td><?php echo $event['long_desc'] ?></td>
-              <td><?php echo $event['date'] ?></td>
-						</tr>
-				<?php endforeach; ?>
-			</tbody>
-		</table>
-	</div>
-  
+  </div>
+
 
   <!--==========================
     Footer
   ============================-->
   <footer id="footer">
     <div class="container">
-        
+
       <div class="row">
         <div class="col-lg-12 text-right ">
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
@@ -180,4 +198,5 @@
   <script src="js/main.js"></script>
 
 </body>
+
 </html>
