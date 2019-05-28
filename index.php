@@ -318,7 +318,7 @@
     --> 
     </section><!-- #advanced-features -->
 
-   
+    
     <!--==========================
       Videos Section
     ============================-->
@@ -340,7 +340,154 @@
        
     </section>
           
-         
+      <!--==========================
+      Projects Section
+    ============================-->
+    <section id="projects" class="section-bg">
+        <div class="container">
+          <header class="section-header">
+            <h3 class="section-title">Projects</h3>
+            <span class="section-divider"></span>
+          </header>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <ul id="projects-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-web">Web</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-ml">ML</li>
+                <li data-filter=".filter-iot">IoT</li>
+                <li data-filter=".filter-block">Blo&Cry</li>
+                <li data-filter=".filter-cloud">Cloud Api</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="row projects-container">
+            <div class="col-lg-4 col-md-6 projects-item filter-web">
+              <div class="projects-wrap">
+                <figure>
+                  <img src="img/intro-bg.jpg" class="img-fluid" alt="" />
+                   <div class="github ctr">
+                     <a href="#" target="_blank">
+                     <button type="button" class="btn btn-outline-light">View Project</button>
+                     </a>
+                   </div>
+                </figure>
+
+                <div class="projects-info">
+                  <h4>project 1</h4>
+                  <p>desc</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 projects-item filter-web"
+              data-wow-delay="0.2s"
+            >
+              <div class="projects-wrap">
+                <figure>
+                  <img src="img/intro-bg.jpg" class="img-fluid" alt="" />
+                  <div class="github ctr">
+                     <a href="#" target="_blank">
+                     <button type="button" class="btn btn-outline-light">View Project</button>
+                     </a>
+                   </div>
+                </figure>
+
+                <div class="projects-info">
+                <h4>project 2</h4>
+                  <p>desc</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 projects-item filter-app">
+              <div class="projects-wrap">
+                <figure>
+                  <img src="img/intro-bg.jpg" class="img-fluid" alt="" />
+                  <div class="github ctr">
+                     <a href="#" target="_blank">
+                     <button type="button" class="btn btn-outline-light">View Project</button>
+                     </a>
+                   </div>
+                </figure>
+
+                <div class="projects-info">
+                <h4>project 3</h4>
+                  <p>desc</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 projects-item filter-app"
+              data-wow-delay="0.2s"
+            >
+              <div class="projects-wrap">
+                <figure>
+                  <img src="img/intro-bg.jpg" class="img-fluid" alt="" />
+                  <div class="github ctr">
+                     <a href="#" target="_blank">
+                     <button type="button" class="btn btn-outline-light">View Project</button>
+                     </a>
+                   </div>
+                </figure>
+
+                <div class="projects-info">
+                <h4>project 4</h4>
+                  <p>desc</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 projects-item filter-ml">
+              <div class="projects-wrap">
+                <figure>
+                  <img src="img/intro-bg.jpg" class="img-fluid" alt="" />
+                  <div class="github ctr">
+                     <a href="#" target="_blank">
+                     <button type="button" class="btn btn-outline-light">View Project</button>
+                     </a>
+                   </div>
+                </figure>
+
+                <div class="projects-info">
+                <h4>project 5</h4>
+                  <p>desc</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 projects-item filter-iot"
+              data-wow-delay="0.1s"
+            >
+              <div class="projects-wrap">
+                <figure>
+                  <img src="img/intro-bg.jpg" class="img-fluid" alt="" />
+                  <div class="github ctr">
+                     <a href="#" target="_blank">
+                     <button type="button" class="btn btn-outline-light">View Project</button>
+                     </a>
+                   </div>
+                </figure>
+
+                <div class="projects-info">
+                <h4>project 6</h4>
+                  <p>desc</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- #projects -->
+      
 
     <!--==========================
       Social Section

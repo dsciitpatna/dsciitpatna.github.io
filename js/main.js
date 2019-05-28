@@ -129,3 +129,15 @@ jQuery(document).ready(function($) {
   // custom code
 
 });
+
+var projectsIsotope = $('.projects-container').isotope({
+  itemSelector: '.projects-item',
+  layoutMode: 'fitRows'
+});
+
+$('#projects-filters li').on( 'click', function() {
+  $("#projects-filters li").removeClass('filter-active');
+  $(this).addClass('filter-active');
+
+  projectsIsotope.isotope({ filter: $(this).data('filter') });
+});
