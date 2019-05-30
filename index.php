@@ -368,9 +368,9 @@
             <div class="col-lg-4 col-md-6 gallery-item filter-clubs">
               <div class="gallery-wrap">
                 <figure>
-                  <img src="projects/img/gallery/c1.jpg" class="img-fluid" alt="" />
+                  <img src="projects/img/c1.jpg" class="img-fluid" alt="" />
                   <a
-                    href="projects/img/gallery/c1.jpg"
+                    href="projects/img/c1.jpg"
                     data-lightbox="gallery"
                     data-title="Club 1"
                     class="link-preview"
@@ -392,9 +392,9 @@
             >
               <div class="gallery-wrap">
                 <figure>
-                  <img src="projects/img/gallery/c2.jpg" class="img-fluid" alt="" />
+                  <img src="projects/img/c2.jpg" class="img-fluid" alt="" />
                   <a
-                    href="projects/img/gallery/c2.jpg"
+                    href="projects/img/c2.jpg"
                     class="link-preview"
                     data-lightbox="gallery"
                     data-title="Club 2"
@@ -413,9 +413,9 @@
             <div class="col-lg-4 col-md-6 gallery-item filter-events">
               <div class="gallery-wrap">
                 <figure>
-                  <img src="projects/img/gallery/e2.jpg" class="img-fluid" alt="" />
+                  <img src="projects/img/e2.jpg" class="img-fluid" alt="" />
                   <a
-                    href="projects/img/gallery/e2.JPG"
+                    href="projects/img/e2.JPG"
                     class="link-preview"
                     data-lightbox="gallery"
                     data-title="Event 2"
@@ -437,9 +437,9 @@
             >
               <div class="gallery-wrap">
                 <figure>
-                  <img src="projects/img/gallery/c3.png" class="img-fluid" alt="" />
+                  <img src="projects/img/c3.png" class="img-fluid" alt="" />
                   <a
-                    href="projects/img/gallery/c3.png"
+                    href="projects/img/c3.png"
                     class="link-preview"
                     data-lightbox="gallery"
                     data-title="Club 3"
@@ -458,9 +458,9 @@
             <div class="col-lg-4 col-md-6 gallery-item filter-events">
               <div class="gallery-wrap">
                 <figure>
-                  <img src="projects/img/gallery/e1.jpg" class="img-fluid" alt="" />
+                  <img src="projects/img/e1.jpg" class="img-fluid" alt="" />
                   <a
-                    href="projects/img/gallery/e1.jpg"
+                    href="projects/img/e1.jpg"
                     class="link-preview"
                     data-lightbox="gallery"
                     data-title="Event 1"
@@ -482,9 +482,9 @@
             >
               <div class="gallery-wrap">
                 <figure>
-                  <img src="projects/img/gallery/e3.jpg" class="img-fluid" alt="" />
+                  <img src="projects/img/e3.jpg" class="img-fluid" alt="" />
                   <a
-                    href="projects/img/gallery/e3.jpg"
+                    href="projects/img/e3.jpg"
                     class="link-preview"
                     data-lightbox="gallery"
                     data-title="Event 3"
