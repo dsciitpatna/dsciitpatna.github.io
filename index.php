@@ -28,6 +28,11 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+
+  <!-- Projects Bootstrap CSS File -->
+  <link href="./projects/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./projects/css/style.css" rel="stylesheet" />
+
   <style>
     @media only screen and (max-width: 768px) {
       
@@ -340,145 +345,157 @@
        
     </section>
           
-      <!--==========================
-      Projects Section
+     <!--==========================
+      Gallery Section
     ============================-->
-    <section id="projects" class="section-bg">
+    <section id="gallery" class="section-bg">
         <div class="container">
           <header class="section-header">
-            <h3 class="section-title">Projects</h3>
-            <span class="section-divider"></span>
+            <h3 class="section-title">Our gallery</h3>
           </header>
 
           <div class="row">
             <div class="col-lg-12">
-              <ul id="projects-flters">
+              <ul id="gallery-flters">
                 <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-web">Web</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-ml">ML</li>
-                <li data-filter=".filter-iot">IoT</li>
-                <li data-filter=".filter-block">Blo&Cry</li>
-                <li data-filter=".filter-cloud">Cloud Api</li>
+                <li data-filter=".filter-clubs">Clubs</li>
+                <li data-filter=".filter-events">Events</li>
               </ul>
             </div>
           </div>
 
-
-          <div class="row projects-container">
-            <div class="col-lg-4 col-md-6 projects-item filter-web">
-              <div class="projects-wrap">
+          <div class="row gallery-container">
+            <div class="col-lg-4 col-md-6 gallery-item filter-clubs">
+              <div class="gallery-wrap">
                 <figure>
-                  <img src="img/intro-bg.jpg" class="img-fluid" alt="" />
-                   <div class="github ctr">
-                     <a href="#" target="_blank">
-                     <button type="button" class="btn btn-outline-light">View Project</button>
-                     </a>
-                   </div>
+                  <img src="projects/img/gallery/c1.jpg" class="img-fluid" alt="" />
+                  <a
+                    href="projects/img/gallery/c1.jpg"
+                    data-lightbox="gallery"
+                    data-title="Club 1"
+                    class="link-preview"
+                    title="Preview"
+                    ><i class="ion ion-eye"></i
+                  ></a>
                 </figure>
 
-                <div class="projects-info">
-                  <h4>project 1</h4>
-                  <p>desc</p>
+                <div class="gallery-info">
+                  <h4>Club 1</h4>
+                  <p>Club</p>
                 </div>
               </div>
             </div>
 
             <div
-              class="col-lg-4 col-md-6 projects-item filter-web"
+              class="col-lg-4 col-md-6 gallery-item filter-clubs"
               data-wow-delay="0.2s"
             >
-              <div class="projects-wrap">
+              <div class="gallery-wrap">
                 <figure>
-                  <img src="img/intro-bg.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                     <a href="#" target="_blank">
-                     <button type="button" class="btn btn-outline-light">View Project</button>
-                     </a>
-                   </div>
+                  <img src="projects/img/gallery/c2.jpg" class="img-fluid" alt="" />
+                  <a
+                    href="projects/img/gallery/c2.jpg"
+                    class="link-preview"
+                    data-lightbox="gallery"
+                    data-title="Club 2"
+                    title="Preview"
+                    ><i class="ion ion-eye"></i
+                  ></a>
                 </figure>
 
-                <div class="projects-info">
-                <h4>project 2</h4>
-                  <p>desc</p>
+                <div class="gallery-info">
+                  <h4>Club 2</h4>
+                  <p>Club</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 projects-item filter-app">
-              <div class="projects-wrap">
+            <div class="col-lg-4 col-md-6 gallery-item filter-events">
+              <div class="gallery-wrap">
                 <figure>
-                  <img src="img/intro-bg.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                     <a href="#" target="_blank">
-                     <button type="button" class="btn btn-outline-light">View Project</button>
-                     </a>
-                   </div>
+                  <img src="projects/img/gallery/e2.jpg" class="img-fluid" alt="" />
+                  <a
+                    href="projects/img/gallery/e2.JPG"
+                    class="link-preview"
+                    data-lightbox="gallery"
+                    data-title="Event 2"
+                    title="Preview"
+                    ><i class="ion ion-eye"></i
+                  ></a>
                 </figure>
 
-                <div class="projects-info">
-                <h4>project 3</h4>
-                  <p>desc</p>
+                <div class="gallery-info">
+                  <h4>Event 2</h4>
+                  <p>Event</p>
                 </div>
               </div>
             </div>
 
             <div
-              class="col-lg-4 col-md-6 projects-item filter-app"
+              class="col-lg-4 col-md-6 gallery-item filter-clubs"
               data-wow-delay="0.2s"
             >
-              <div class="projects-wrap">
+              <div class="gallery-wrap">
                 <figure>
-                  <img src="img/intro-bg.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                     <a href="#" target="_blank">
-                     <button type="button" class="btn btn-outline-light">View Project</button>
-                     </a>
-                   </div>
+                  <img src="projects/img/gallery/c3.png" class="img-fluid" alt="" />
+                  <a
+                    href="projects/img/gallery/c3.png"
+                    class="link-preview"
+                    data-lightbox="gallery"
+                    data-title="Club 3"
+                    title="Preview"
+                    ><i class="ion ion-eye"></i
+                  ></a>
                 </figure>
 
-                <div class="projects-info">
-                <h4>project 4</h4>
-                  <p>desc</p>
+                <div class="gallery-info">
+                  <h4>Club 3</h4>
+                  <p>Club</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 projects-item filter-ml">
-              <div class="projects-wrap">
+            <div class="col-lg-4 col-md-6 gallery-item filter-events">
+              <div class="gallery-wrap">
                 <figure>
-                  <img src="img/intro-bg.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                     <a href="#" target="_blank">
-                     <button type="button" class="btn btn-outline-light">View Project</button>
-                     </a>
-                   </div>
+                  <img src="projects/img/gallery/e1.jpg" class="img-fluid" alt="" />
+                  <a
+                    href="projects/img/gallery/e1.jpg"
+                    class="link-preview"
+                    data-lightbox="gallery"
+                    data-title="Event 1"
+                    title="Preview"
+                    ><i class="ion ion-eye"></i
+                  ></a>
                 </figure>
 
-                <div class="projects-info">
-                <h4>project 5</h4>
-                  <p>desc</p>
+                <div class="gallery-info">
+                  <h4>Event 1</h4>
+                  <p>Event</p>
                 </div>
               </div>
             </div>
 
             <div
-              class="col-lg-4 col-md-6 projects-item filter-iot"
+              class="col-lg-4 col-md-6 gallery-item filter-events"
               data-wow-delay="0.1s"
             >
-              <div class="projects-wrap">
+              <div class="gallery-wrap">
                 <figure>
-                  <img src="img/intro-bg.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                     <a href="#" target="_blank">
-                     <button type="button" class="btn btn-outline-light">View Project</button>
-                     </a>
-                   </div>
+                  <img src="projects/img/gallery/e3.jpg" class="img-fluid" alt="" />
+                  <a
+                    href="projects/img/gallery/e3.jpg"
+                    class="link-preview"
+                    data-lightbox="gallery"
+                    data-title="Event 3"
+                    title="Preview"
+                    ><i class="ion ion-eye"></i
+                  ></a>
                 </figure>
 
-                <div class="projects-info">
-                <h4>project 6</h4>
-                  <p>desc</p>
+                <div class="gallery-info">
+                  <h4>Event 3</h4>
+                  <p>Event</p>
                 </div>
               </div>
             </div>
@@ -486,7 +503,7 @@
           </div>
         </div>
       </section>
-      <!-- #projects -->
+      <!-- #gallery -->
       
 
     <!--==========================
@@ -677,6 +694,16 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+      <!-- JavaScript Libraries for Projects -->
+      <script src="./projects/lib/jquery/jquery.min.js"></script>
+    <script src="./projects/lib/superfish/superfish.min.js"></script>
+    <script src="./projects/lib/wow/wow.min.js"></script>
+    <script src="./projects/lib/waypoints/waypoints.min.js"></script>
+    <script src="./projects/lib/counterup/counterup.min.js"></script>
+    <script src="./projects/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="./projects/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <script src="./projects/js/main.js"></script>
 
 
 </body>
