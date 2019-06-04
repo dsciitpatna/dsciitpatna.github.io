@@ -62,6 +62,43 @@
     .mobile {display:none;}
     
     }
+
+
+    
+#gallery .gallery-item figure .github {
+  position :absolute;
+  top:50%;
+  left:50%;
+  height:100%;
+  width:100%;
+  transform: scaleY(0);
+  transition:transform .5s;
+}
+#gallery .gallery-item figure .ctr{
+  position:absolute;
+  transform: translate(-50%,-50%);
+  text-align:center;
+  padding-top:25%;
+  background:rgba(0, 0, 0, 0.1);
+  opacity:0;
+}
+#gallery .gallery-item figure:hover .ctr{
+  opacity:1;
+}
+
+#videos{
+  background:#eff5f5;
+  overflow:hidden;
+  padding:60px 0 60px 0;
+}
+
+#gallery #gallery-flters li:hover,
+#gallery #gallery-flters li.filter-active {
+    background:  linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+    color: #fff;
+}
+
+
   </style>
 </head>
 
@@ -358,11 +395,11 @@
               <div class="gallery-wrap">
                 <figure>
                   <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                 <!-- <div class="github ctr">
+                  <div class="github ctr">
                     <a href="#" target="_blank">
                       <button type="button" class="btn btn-outline-light">View Project</button>
                     </a>
-                   </div>-->
+                   </div>
                 </figure>
 
                 <div class="gallery-info">
@@ -379,11 +416,11 @@
               <div class="gallery-wrap">
                 <figure>
                   <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                 <!-- <div class="github ctr">
+                  <div class="github ctr">
                     <a href="#" target="_blank">
                       <button type="button" class="btn btn-outline-light">View Project</button>
                     </a>
-                   </div>-->
+                   </div>
                 </figure>
 
                 <div class="gallery-info">
@@ -397,11 +434,11 @@
               <div class="gallery-wrap">
                 <figure>
                   <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                 <!-- <div class="github ctr">
+                  <div class="github ctr">
                     <a href="#" target="_blank">
                       <button type="button" class="btn btn-outline-light">View Project</button>
                     </a>
-                   </div>-->
+                   </div>
                 </figure>
 
                 <div class="gallery-info">
@@ -418,11 +455,11 @@
               <div class="gallery-wrap">
                 <figure>
                   <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <!--<div class="github ctr">
+                  <div class="github ctr">
                     <a href="#" target="_blank">
                       <button type="button" class="btn btn-outline-light">View Project</button>
                     </a>
-                   </div>-->
+                   </div>
                 </figure>
 
                 <div class="gallery-info">
@@ -436,11 +473,11 @@
               <div class="gallery-wrap">
                 <figure>
                   <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                 <!-- <div class="github ctr">
+                  <div class="github ctr">
                     <a href="#" target="_blank">
                       <button type="button" class="btn btn-outline-light">View Project</button>
                     </a>
-                   </div>-->
+                  </div>
                 </figure>
 
                 <div class="gallery-info">
@@ -457,11 +494,11 @@
               <div class="gallery-wrap">
                 <figure>
                   <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                 <!-- <div class="github ctr">
+                  <div class="github ctr">
                     <a href="#" target="_blank">
                       <button type="button" class="btn btn-outline-light">View Project</button>
                     </a>
-                   </div>-->
+                   </div>
                 </figure>
 
                 <div class="gallery-info">
@@ -480,7 +517,7 @@
     <!--==========================
       Videos Section
     ============================-->
-    <section id="features"  class="section-bg">
+    <section id="videos"  class="section-bg">
    
       <div class="container">
          <div class="row">
