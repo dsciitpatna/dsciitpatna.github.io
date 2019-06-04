@@ -616,8 +616,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   
 }
 
-
-
+#videos{
+  background: #eff5f5;
+  padding:60px 0 60px 0;
+  overflow:hidden;
+}
 
 /* Call To Action Section
 --------------------------------*/
@@ -753,9 +756,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: rgba(0, 0, 0, 0.7);
 } 
 
+
 /* Projects Section
 --------------------------------*/
-
+/*
 #projects {
   padding: 100px 0;
 }
@@ -862,7 +866,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50%;
   transition: 0.2s linear;
 }
-/*
+
 #projects .projects-item figure .link-preview i{
   padding-top: 6px;
   font-size: 22px;
@@ -879,7 +883,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #projects .projects-item figure:hover .link-preview {
   transform: scale(10);
-} */
+} 
 
 #projects .projects-item .projects-info {
   background: #fff;
@@ -914,7 +918,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
-
+*/
 /* Contact Section
 --------------------------------*/
 

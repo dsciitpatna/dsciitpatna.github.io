@@ -141,7 +141,7 @@
         <img class="clip" src="img/cliparts.png">
         <div class="section-header">
           <h3 class="section-title">About Us</h3>
-          <span class="section-divider"></span>
+         <!-- <span class="section-divider"></span>-->
           <p class="section-description">
            
             Developer Student Clubs IIT Patna, powered by Google Developers, is a non-profit community that 
@@ -224,7 +224,7 @@
           <div class="col-lg-8 offset-lg-4">
             <div class="section-header wow fadeIn" data-wow-duration="1s">
               <h3 class="section-title">Featuress</h3>
-              <span class="section-divider"></span>
+              <!--<span class="section-divider"></span>-->
             </div>
           </div>
 
@@ -329,10 +329,159 @@
     </section><!-- #advanced-features -->
 
     
+          
+     <!--==========================
+      Gallery Section
+    ============================-->
+    <section id="gallery" class="section-bg">
+        <div class="container">
+          <header class="section-header">
+            <h3 class="section-title">Our Projects</h3>
+          </header>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <ul id="gallery-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-web">Web</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-ml">ML</li>
+                <li data-filter=".filter-block">Blo & Cry</li>
+                <li data-filter=".filter-iot">IoT</li>
+                <li data-filter=".filter-cloud">Cloud APIs</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row gallery-container">
+            <div class="col-lg-4 col-md-6 gallery-item filter-web">
+              <div class="gallery-wrap">
+                <figure>
+                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
+                 <!-- <div class="github ctr">
+                    <a href="#" target="_blank">
+                      <button type="button" class="btn btn-outline-light">View Project</button>
+                    </a>
+                   </div>-->
+                </figure>
+
+                <div class="gallery-info">
+                  <h4>Project 1</h4>
+                  <p>description</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 gallery-item filter-cloud"
+              data-wow-delay="0.2s"
+            >
+              <div class="gallery-wrap">
+                <figure>
+                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
+                 <!-- <div class="github ctr">
+                    <a href="#" target="_blank">
+                      <button type="button" class="btn btn-outline-light">View Project</button>
+                    </a>
+                   </div>-->
+                </figure>
+
+                <div class="gallery-info">
+                  <h4>Project 2</h4>
+                  <p>description</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item filter-iot">
+              <div class="gallery-wrap">
+                <figure>
+                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
+                 <!-- <div class="github ctr">
+                    <a href="#" target="_blank">
+                      <button type="button" class="btn btn-outline-light">View Project</button>
+                    </a>
+                   </div>-->
+                </figure>
+
+                <div class="gallery-info">
+                  <h4>Project 2</h4>
+                  <p>description</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 gallery-item filter-ml"
+              data-wow-delay="0.2s"
+            >
+              <div class="gallery-wrap">
+                <figure>
+                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
+                  <!--<div class="github ctr">
+                    <a href="#" target="_blank">
+                      <button type="button" class="btn btn-outline-light">View Project</button>
+                    </a>
+                   </div>-->
+                </figure>
+
+                <div class="gallery-info">
+                  <h4>Project 3</h4>
+                  <p>description</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item filter-app">
+              <div class="gallery-wrap">
+                <figure>
+                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
+                 <!-- <div class="github ctr">
+                    <a href="#" target="_blank">
+                      <button type="button" class="btn btn-outline-light">View Project</button>
+                    </a>
+                   </div>-->
+                </figure>
+
+                <div class="gallery-info">
+                  <h4>Project 1</h4>
+                  <p>description</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 gallery-item filter-block"
+              data-wow-delay="0.1s"
+            >
+              <div class="gallery-wrap">
+                <figure>
+                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
+                 <!-- <div class="github ctr">
+                    <a href="#" target="_blank">
+                      <button type="button" class="btn btn-outline-light">View Project</button>
+                    </a>
+                   </div>-->
+                </figure>
+
+                <div class="gallery-info">
+                  <h4>Project 3</h4>
+                  <p>description</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- #gallery -->
+       
+       
     <!--==========================
       Videos Section
     ============================-->
-    <section id="features">
+    <section id="features"  class="section-bg">
+   
       <div class="container">
          <div class="row">
           <div class="col-lg-4 wow fadeInLeft">
@@ -348,168 +497,8 @@
           </div> 
         </div>
        
-    </section>
-          
-     <!--==========================
-      Gallery Section
-    ============================-->
-    <section id="gallery" class="section-bg">
-        <div class="container">
-          <header class="section-header">
-            <h3 class="section-title">Our gallery</h3>
-          </header>
-
-          <div class="row">
-            <div class="col-lg-12">
-              <ul id="gallery-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-clubs">Clubs</li>
-                <li data-filter=".filter-events">Events</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row gallery-container">
-            <div class="col-lg-4 col-md-6 gallery-item filter-clubs">
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="projects/img/c1.jpg" class="img-fluid" alt="" />
-                  <a
-                    href="projects/img/c1.jpg"
-                    data-lightbox="gallery"
-                    data-title="Club 1"
-                    class="link-preview"
-                    title="Preview"
-                    ><i class="ion ion-eye"></i
-                  ></a>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Club 1</h4>
-                  <p>Club</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 gallery-item filter-clubs"
-              data-wow-delay="0.2s"
-            >
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="projects/img/c2.jpg" class="img-fluid" alt="" />
-                  <a
-                    href="projects/img/c2.jpg"
-                    class="link-preview"
-                    data-lightbox="gallery"
-                    data-title="Club 2"
-                    title="Preview"
-                    ><i class="ion ion-eye"></i
-                  ></a>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Club 2</h4>
-                  <p>Club</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item filter-events">
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="projects/img/e2.jpg" class="img-fluid" alt="" />
-                  <a
-                    href="projects/img/e2.JPG"
-                    class="link-preview"
-                    data-lightbox="gallery"
-                    data-title="Event 2"
-                    title="Preview"
-                    ><i class="ion ion-eye"></i
-                  ></a>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Event 2</h4>
-                  <p>Event</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 gallery-item filter-clubs"
-              data-wow-delay="0.2s"
-            >
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="projects/img/c3.png" class="img-fluid" alt="" />
-                  <a
-                    href="projects/img/c3.png"
-                    class="link-preview"
-                    data-lightbox="gallery"
-                    data-title="Club 3"
-                    title="Preview"
-                    ><i class="ion ion-eye"></i
-                  ></a>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Club 3</h4>
-                  <p>Club</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item filter-events">
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="projects/img/e1.jpg" class="img-fluid" alt="" />
-                  <a
-                    href="projects/img/e1.jpg"
-                    class="link-preview"
-                    data-lightbox="gallery"
-                    data-title="Event 1"
-                    title="Preview"
-                    ><i class="ion ion-eye"></i
-                  ></a>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Event 1</h4>
-                  <p>Event</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 gallery-item filter-events"
-              data-wow-delay="0.1s"
-            >
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="projects/img/e3.jpg" class="img-fluid" alt="" />
-                  <a
-                    href="projects/img/e3.jpg"
-                    class="link-preview"
-                    data-lightbox="gallery"
-                    data-title="Event 3"
-                    title="Preview"
-                    ><i class="ion ion-eye"></i
-                  ></a>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Event 3</h4>
-                  <p>Event</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <!-- #gallery -->
-      
+    
+  </section>
 
     <!--==========================
       Social Section
@@ -519,7 +508,7 @@
 
         <div class="section-header">
           <h3 class="section-title">Social</h3>
-          <span class="section-divider"></span>
+          <!--<span class="section-divider"></span>-->
           <p class="section-description"></p>
         </div>
 
