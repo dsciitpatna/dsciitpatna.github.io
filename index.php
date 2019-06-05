@@ -29,15 +29,6 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- Projects Bootstrap CSS File -->
-  <link href="./projects/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="./projects/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-  <link href="./projects/lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="./projects/lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-  <link href="./projects/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-  <link href="./projects/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-  <link href="./projects/css/style.css" rel="stylesheet" />
-
   <style>
     @media only screen and (max-width: 768px) {
       
@@ -364,154 +355,6 @@
       </div>
     --> 
     </section><!-- #advanced-features -->
-
-    
-          
-     <!--==========================
-      Gallery Section
-    ============================-->
-    <section id="gallery" class="section-bg">
-        <div class="container">
-          <header class="section-header">
-            <h3 class="section-title">Our Projects</h3>
-          </header>
-
-          <div class="row">
-            <div class="col-lg-12">
-              <ul id="gallery-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-web">Web</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-ml">ML</li>
-                <li data-filter=".filter-block">Blo & Cry</li>
-                <li data-filter=".filter-iot">IoT</li>
-                <li data-filter=".filter-cloud">Cloud APIs</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row gallery-container">
-            <div class="col-lg-4 col-md-6 gallery-item filter-web">
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                    <a href="#" target="_blank">
-                      <button type="button" class="btn btn-outline-light">View Project</button>
-                    </a>
-                   </div>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Project 1</h4>
-                  <p>description</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 gallery-item filter-cloud"
-              data-wow-delay="0.2s"
-            >
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                    <a href="#" target="_blank">
-                      <button type="button" class="btn btn-outline-light">View Project</button>
-                    </a>
-                   </div>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Project 2</h4>
-                  <p>description</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item filter-iot">
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                    <a href="#" target="_blank">
-                      <button type="button" class="btn btn-outline-light">View Project</button>
-                    </a>
-                   </div>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Project 2</h4>
-                  <p>description</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 gallery-item filter-ml"
-              data-wow-delay="0.2s"
-            >
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                    <a href="#" target="_blank">
-                      <button type="button" class="btn btn-outline-light">View Project</button>
-                    </a>
-                   </div>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Project 3</h4>
-                  <p>description</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item filter-app">
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                    <a href="#" target="_blank">
-                      <button type="button" class="btn btn-outline-light">View Project</button>
-                    </a>
-                  </div>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Project 1</h4>
-                  <p>description</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 gallery-item filter-block"
-              data-wow-delay="0.1s"
-            >
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                    <a href="#" target="_blank">
-                      <button type="button" class="btn btn-outline-light">View Project</button>
-                    </a>
-                   </div>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Project 3</h4>
-                  <p>description</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <!-- #gallery -->
        
        
     <!--==========================
@@ -641,8 +484,6 @@
            
           </div>
 
-          
-
         </div>
 
       </div>
@@ -719,29 +560,10 @@
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
-
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
-      <!-- JavaScript Libraries -->
-      <script src="./projects/lib/jquery/jquery.min.js"></script>
-      <script src="./projects/lib/jquery/jquery-migrate.min.js"></script>
-      <script src="./projects/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="./projects/lib/easing/easing.min.js"></script>
-      <script src="./projects/lib/superfish/hoverIntent.js"></script>
-      <script src="./projects/lib/superfish/superfish.min.js"></script>
-      <script src="./projects/lib/wow/wow.min.js"></script>
-      <script src="./projects/lib/waypoints/waypoints.min.js"></script>
-      <script src="./projects/lib/counterup/counterup.min.js"></script>
-      <script src="./projects/lib/owlcarousel/owl.carousel.min.js"></script>
-      <script src="./projects/lib/isotope/isotope.pkgd.min.js"></script>
-      <script src="./projects/lib/lightbox/js/lightbox.min.js"></script>
-      <script src="./projects/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
-      <script src="./projects/js/main.js"></script>
-
 
 </body>
 </html>
