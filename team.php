@@ -74,11 +74,9 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="<?php echo ROOT_URL; ?>#intro">Home</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>#about">About Us</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>#features">Features</a></li>
           <li><a href="<?php echo ROOT_URL; ?>gallery.php">Gallery</a></li>
           <li><a href="<?php echo ROOT_URL; ?>team.php">Team</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>#contact">Contact Us</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>projects.php">Projects</a></li>
           <li><a href="<?php echo ROOT_URL; ?>leaderboard.php">Leaderboard</a></li>
           <li><a href="<?php echo ROOT_URL; ?>timeline.php">Timeline</a></li>
         </ul>
@@ -653,15 +651,55 @@
   <footer id="footer">
     <div class="container">
         
-        <div class="row">
-          <div class="col-lg-12 text-right ">
-            <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-              <a href="#intro" class="scrollto">Home</a>
-              <a href="#about" class="scrollto">About</a>
-            </nav>
-          </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <strong>Quick Links:</strong>
+          <br><br>
+          <a href="https://www.iitp.ac.in/">IIT Patna</a>
+          <br>
+          <a href="https://www.iitp.ac.in/hostel/reachIITP.html">Reach Us</a>
+          <br>
+          <br>
+          <br>
+          
         </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <strong>Social Links:</strong>
+          <br><br>
+          <a href="https://www.facebook.com/dsciitpatna/">
+          <i class="fa fa-facebook-square">
+          </i>
+          Developer Student Club
+          </a>
+          <br>
+          <a href="https://www.facebook.com/iitp.ac.in/">
+          <i class="fa fa-facebook-square">
+           </i>
+          IIT Patna
+          </a>
+          <br>
+          <br>
+          <br>
+          
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+         <strong>Back To:</strong>
+         <br><br>
+         <a href="#intro" class="scrollto">Home</a>
+         <br>
+         <a href="#about" class="scrollto">About</a>
+         <br>
+          <br>
+          <br>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+         <strong>Copyright ©</strong> 
+        <br>
+        <strong>Indian Institute of Technology, Patna</strong>
+         </div>
+         <br><br>
       </div>
+    </div>
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

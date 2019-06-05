@@ -142,11 +142,8 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="<?php echo ROOT_URL; ?>#intro">Home</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>#about">About Us</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>#features">Features</a></li>
           <li><a href="<?php echo ROOT_URL; ?>gallery.php">Gallery</a></li>
           <li><a href="<?php echo ROOT_URL; ?>team.php">Team</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>#contact">Contact Us</a></li>
           <li><a href="<?php echo ROOT_URL; ?>leaderboard.php">Leaderboard</a></li>
           <li><a href="<?php echo ROOT_URL; ?>timeline.php">Timeline</a></li>
         </ul>

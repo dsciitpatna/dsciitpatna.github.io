@@ -13,82 +13,71 @@
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
-
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Libraries CSS Files -->
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
   <style>
     @media only screen and (max-width: 768px) {
-      
-.desktop{
-  display:none;
-}
-.mobile{
-  display:inline;
-}
-
-
-
-}
-@media only screen and (min-width: 768px) {
-
-  .mobile {display:none;}
-  .desktop{display:inline;}
-  
-  }
-  @media only screen and (min-width: 1525px) {
-
-    .mobile {display:none;}
-    
+        
+    .desktop{
+      display:none;
+    }
+    .mobile{
+      display:inline;
     }
 
+    }
+    @media only screen and (min-width: 768px) {
 
-    
-#gallery .gallery-item figure .github {
-  position :absolute;
-  top:50%;
-  left:50%;
-  height:100%;
-  width:100%;
-  transform: scaleY(0);
-  transition:transform .5s;
-}
-#gallery .gallery-item figure .ctr{
-  position:absolute;
-  transform: translate(-50%,-50%);
-  text-align:center;
-  padding-top:25%;
-  background:rgba(0, 0, 0, 0.1);
-  opacity:0;
-}
-#gallery .gallery-item figure:hover .ctr{
-  opacity:1;
-}
+      .mobile {display:none;}
+      .desktop{display:inline;}
+      
+      }
+      @media only screen and (min-width: 1525px) {
+        .mobile {display:none;}
+      }
 
-#videos{
-  background:#eff5f5;
-  overflow:hidden;
-  padding:60px 0 60px 0;
-}
+    #gallery .gallery-item figure .github {
+      position :absolute;
+      top:50%;
+      left:50%;
+      height:100%;
+      width:100%;
+      transform: scaleY(0);
+      transition:transform .5s;
+    }
+    #gallery .gallery-item figure .ctr{
+      position:absolute;
+      transform: translate(-50%,-50%);
+      text-align:center;
+      padding-top:25%;
+      background:rgba(0, 0, 0, 0.1);
+      opacity:0;
+    }
+    #gallery .gallery-item figure:hover .ctr{
+      opacity:1;
+    }
 
-#gallery #gallery-flters li:hover,
-#gallery #gallery-flters li.filter-active {
-    background:  linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
-    color: #fff;
-}
+    #videos{
+      background:#eff5f5;
+      overflow:hidden;
+      padding:60px 0 60px 0;
+    }
 
+    #gallery #gallery-flters li:hover,
+    #gallery #gallery-flters li.filter-active {
+        background:  linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+        color: #fff;
+    }
 
   </style>
 </head>
@@ -134,10 +123,10 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="<?php echo ROOT_URL; ?>#intro">Home</a></li>
           <li><a href="<?php echo ROOT_URL; ?>#about">About Us</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>#features">Features</a></li>
           <li><a href="<?php echo ROOT_URL; ?>gallery.php">Gallery</a></li>
           <li><a href="<?php echo ROOT_URL; ?>team.php">Team</a></li>
           <li><a href="<?php echo ROOT_URL; ?>#contact">Contact Us</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>projects.php">Projects</a></li>
           <li><a href="<?php echo ROOT_URL; ?>leaderboard.php">Leaderboard</a></li>
           <li><a href="<?php echo ROOT_URL; ?>timeline.php">Timeline</a></li>
         </ul>
@@ -171,36 +160,27 @@
           <h3 class="section-title">About Us</h3>
          <!-- <span class="section-divider"></span>-->
           <p class="section-description">
-           
             Developer Student Clubs IIT Patna, powered by Google Developers, is a non-profit community that 
             aims to inspire intelligent minds in the field of technology. It provides opportunities where developers, 
             designers and managers work together to carry out real-time projects.
             <br>
             <br>
-           It is open to any student, ranging from novice 
-             developers who are just starting to advanced developers who want to further their skills. It is intended to be a space for
-              students to learn and collaborate as they solve real-world problems.
-             
-              In a desire to introduce creativity into technology, designers at DSC collaborate with the developers and managers to bring 
-              out effective executions. Students here have worked on real-time projects that use Web dev, ML, Blockchains, IOT and much more
-               making us one of the best technical chapters of IIT Patna.
-               <br>
-               <br>
-               DSC IITP boasts of a very diverse community with members from various disciplines of engineering working together and
-                developing themselves for the future. Here at DSC IITP, students get to work with a remarkably dedicated group of developers, make 
-                projects, organise workshops, represent us in hackathons and much more. We encourage every member regardless of his/her domain
-                 of enrolment to work on projects and learn to develop new skills. Students also get to interact with industry experts from Google who are 
-                 constantly in touch with us and guide us.
-                
-         
+            It is open to any student, ranging from novice 
+            developers who are just starting to advanced developers who want to further their skills. It is intended to be a space for
+            students to learn and collaborate as they solve real-world problems.
+            
+            In a desire to introduce creativity into technology, designers at DSC collaborate with the developers and managers to bring 
+            out effective executions. Students here have worked on real-time projects that use Web dev, ML, Blockchains, IOT and much more
+            making us one of the best technical chapters of IIT Patna.
+            <br>
+            <br>
+            DSC IITP boasts of a very diverse community with members from various disciplines of engineering working together and
+            developing themselves for the future. Here at DSC IITP, students get to work with a remarkably dedicated group of developers, make 
+            projects, organise workshops, represent us in hackathons and much more. We encourage every member regardless of his/her domain
+            of enrolment to work on projects and learn to develop new skills. Students also get to interact with industry experts from Google who are 
+            constantly in touch with us and guide us.
           </p>
-          
-
         </div>
-      
-
-      
-
       </div>
     </section><!-- #about -->
 
@@ -227,9 +207,7 @@
             <h3 class="cta-title">1</h3>
             <p class="cta-text">VISION</p>
           </div>
-         
         </div>
-
       </div>
     </section>
     <!-- #call-to-action -->  
