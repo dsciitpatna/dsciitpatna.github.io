@@ -65,7 +65,7 @@
 
 
     
-#gallery .gallery-item figure .github {
+    #gallery .gallery-item figure .github {
   position :absolute;
   top:50%;
   left:50%;
@@ -86,11 +86,6 @@
   opacity:1;
 }
 
-#videos{
-  background:#eff5f5;
-  overflow:hidden;
-  padding:60px 0 60px 0;
-}
 
 #gallery #gallery-flters li:hover,
 #gallery #gallery-flters li.filter-active {
