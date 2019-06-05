@@ -23,7 +23,7 @@
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css?version=51" rel="stylesheet">
 
   <style>
     @media only screen and (max-width: 768px) {
@@ -45,6 +45,8 @@
       @media only screen and (min-width: 1525px) {
         .mobile {display:none;}
       }
+
+    
 
   </style>
 </head>
@@ -108,7 +110,10 @@
     <div class="intro-text">
       <h2>DSC IIT Patna</h2>
       <p>Creating Impact For a Better Tomorrow Some Random Text To Fill.</p>  
-      <a href="#contact" class="btn-get-started scrollto">Contact Us</a> 
+      <ul class="links">    
+         <li><a href="#contact" class="btn-get-started scrollto" >Contact Us</a></li>
+         <li> <a href="#" class="btn-get-started scrollto" >Submit A Project Idea</a></li>
+      </ul>
     </div>
 
    
@@ -483,10 +488,15 @@
           <br>
           <br>
         </div>
+        
         <div class="col-lg-3 col-md-3 col-sm-3">
          <strong>Copyright ©</strong> 
-        <br>
-        <strong>Indian Institute of Technology, Patna</strong>
+         <br>
+         <strong>Developer Student Club</strong>
+         <br>
+         <strong>Indian Institute of Technology, Patna</strong>
+         <br>
+         <a href="#" class="btn-get-started scrollto" >Submit A Project Idea</a>  
          </div>
          <br><br>
       </div>

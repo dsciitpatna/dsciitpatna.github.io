@@ -195,6 +195,7 @@ h6 {
   margin: 10px;
   border: 2px solid black;
   color: black;
+  display:inline-block;
 }
 
 #intro .btn-get-started:hover {
@@ -202,6 +203,13 @@ h6 {
   background: black;
 }
 
+
+.links ul{
+  list-style-type:none;
+}
+.links li {
+  display:inline;
+}
 
 
 
@@ -613,7 +621,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #advanced-features .advanced-feature-img-left {
   max-width: 100%;
   float: left;
-  padding:  30px 30px 0 0;
+  
   
 }
 
@@ -856,6 +864,26 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-links a:hover {
   color: #1dc8cd;
 }
+#footer .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 3px 14px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin: 1px;
+  border: 1px solid black;
+  color: black;
+  display:inline-block;
+}
+
+#footer .btn-get-started:hover {
+  color: #1dc8cd;
+  background: black;
+}
+
 
 @media (min-width: 769px) {
   #features .features-img {
