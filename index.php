@@ -141,7 +141,7 @@
     <div class="intro-text">
       <h2>DSC IIT Patna</h2>
       <p>Creating Impact For a Better Tomorrow Some Random Text To Fill.</p>  
-      <a href="#contact" class="btn-get-started scrollto">Contact Us</a> 
+      <a href="<?php echo ROOT_URL; ?>projects.php" class="btn-get-started scrollto">View Projects</a> 
     </div>
 
    
