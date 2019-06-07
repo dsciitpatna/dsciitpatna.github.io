@@ -49,6 +49,15 @@ mysqli_close($mysqli);
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/timeline.css" rel="stylesheet">
+  <style>
+   #circle
+    {
+      border-radius:50% 50% 50% 50%;  
+      width:100%;
+      height:100%;
+   }
+
+  </style>
 </head>
 
 <body>
@@ -122,7 +131,7 @@ mysqli_close($mysqli);
             <li class='timeline-straight'>
             <a href="">
               <div class='timeline-image'>
-                <img class=' rounded-circle img-fluid img_url' src="" alt="">
+                <img class=' rounded-circle img-fluid img_url' src="img/dsccover.jpg" alt="" id="circle">
               </div>
             </a>
             <div class='timeline-panel'>
@@ -138,7 +147,7 @@ mysqli_close($mysqli);
           </li>
         <?php } else { $i++; ?>
           <li class='timeline-inverted'><a href="">
-              <div class='timeline-image'><img class='rounded-circle img-fluid img_url' src="" alt=""></div>
+              <div class='timeline-image'><img class='rounded-circle img-fluid img_url' src="img/1_myY345H2376N21kQ8oeyNw.jpg" alt="" id="circle"></div>
             </a>
             <div class='timeline-panel'>
               <div class='timeline-heading'>
