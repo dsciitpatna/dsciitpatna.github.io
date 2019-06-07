@@ -56,6 +56,11 @@ mysqli_close($mysqli);
       width:100%;
       height:100%;
    }
+   .timeline > li .timeline-panel {
+      background-color:#E8F8F5;
+      border-radius:10px;
+    }
+    
 
   </style>
 </head>
@@ -109,7 +114,7 @@ mysqli_close($mysqli);
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-
+ 
 
   <!--==========================
       Timeline Section
@@ -137,6 +142,7 @@ mysqli_close($mysqli);
             <div class='timeline-panel'>
               <div class='timeline-heading'>
                 <h4 class='date'><?php echo $event['date']?></h4>
+                <hr>
                 <h4 class='subheading title'><?php echo $event['title']?></h4>
               </div>
               <div class='timeline-body'>
@@ -152,6 +158,7 @@ mysqli_close($mysqli);
             <div class='timeline-panel'>
               <div class='timeline-heading'>
                 <h4 class='date'><?php echo $event['date']?></h4>
+                <hr>
                 <h4 class='subheading title'><?php echo $event['title']?></h4>
               </div>
               <div class='timeline-body'>
@@ -167,6 +174,7 @@ mysqli_close($mysqli);
       </div>
     </div>
   </div>
+  <br><br>
 
 
   <!--==========================
@@ -219,7 +227,11 @@ mysqli_close($mysqli);
         <div class="col-lg-3 col-md-3 col-sm-3">
          <strong>Copyright ©</strong> 
         <br>
+        <strong>Developer Student Club</strong>
+         <br>
         <strong>Indian Institute of Technology, Patna</strong>
+        <br>
+         <a href="#" class="btn-get-started scrollto" >Submit A Project Idea</a>  
          </div>
          <br><br>
       </div>
