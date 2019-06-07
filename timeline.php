@@ -49,6 +49,20 @@ mysqli_close($mysqli);
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/timeline.css" rel="stylesheet">
+  <style>
+   #circle
+    {
+      border-radius:50% 50% 50% 50%;  
+      width:100%;
+      height:100%;
+   }
+   .timeline > li .timeline-panel {
+      background-color:#E8F8F5;
+      border-radius:10px;
+    }
+    
+
+  </style>
 </head>
 
 <body>
@@ -100,7 +114,7 @@ mysqli_close($mysqli);
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-
+ 
 
   <!--==========================
       Timeline Section
@@ -122,12 +136,13 @@ mysqli_close($mysqli);
             <li class='timeline-straight'>
             <a href="">
               <div class='timeline-image'>
-                <img class=' rounded-circle img-fluid img_url' src="" alt="">
+                <img class=' rounded-circle img-fluid img_url' src="img/dsccover.jpg" alt="" id="circle">
               </div>
             </a>
             <div class='timeline-panel'>
               <div class='timeline-heading'>
                 <h4 class='date'><?php echo $event['date']?></h4>
+                <hr>
                 <h4 class='subheading title'><?php echo $event['title']?></h4>
               </div>
               <div class='timeline-body'>
@@ -138,11 +153,12 @@ mysqli_close($mysqli);
           </li>
         <?php } else { $i++; ?>
           <li class='timeline-inverted'><a href="">
-              <div class='timeline-image'><img class='rounded-circle img-fluid img_url' src="" alt=""></div>
+              <div class='timeline-image'><img class='rounded-circle img-fluid img_url' src="img/1_myY345H2376N21kQ8oeyNw.jpg" alt="" id="circle"></div>
             </a>
             <div class='timeline-panel'>
               <div class='timeline-heading'>
                 <h4 class='date'><?php echo $event['date']?></h4>
+                <hr>
                 <h4 class='subheading title'><?php echo $event['title']?></h4>
               </div>
               <div class='timeline-body'>
@@ -158,6 +174,7 @@ mysqli_close($mysqli);
       </div>
     </div>
   </div>
+  <br><br>
 
 
   <!--==========================
@@ -210,7 +227,11 @@ mysqli_close($mysqli);
         <div class="col-lg-3 col-md-3 col-sm-3">
          <strong>Copyright ©</strong> 
         <br>
+        <strong>Developer Student Club</strong>
+         <br>
         <strong>Indian Institute of Technology, Patna</strong>
+        <br>
+         <a href="#" class="btn-get-started scrollto" >Submit A Project Idea</a>  
          </div>
          <br><br>
       </div>

@@ -23,7 +23,7 @@
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css?version=51" rel="stylesheet">
 
   <style>
     @media only screen and (max-width: 768px) {
@@ -46,38 +46,7 @@
         .mobile {display:none;}
       }
 
-    #gallery .gallery-item figure .github {
-      position :absolute;
-      top:50%;
-      left:50%;
-      height:100%;
-      width:100%;
-      transform: scaleY(0);
-      transition:transform .5s;
-    }
-    #gallery .gallery-item figure .ctr{
-      position:absolute;
-      transform: translate(-50%,-50%);
-      text-align:center;
-      padding-top:25%;
-      background:rgba(0, 0, 0, 0.1);
-      opacity:0;
-    }
-    #gallery .gallery-item figure:hover .ctr{
-      opacity:1;
-    }
-
-    #videos{
-      background:#eff5f5;
-      overflow:hidden;
-      padding:60px 0 60px 0;
-    }
-
-    #gallery #gallery-flters li:hover,
-    #gallery #gallery-flters li.filter-active {
-        background:  linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
-        color: #fff;
-    }
+    
 
   </style>
 </head>
@@ -143,8 +112,6 @@
       <p>Creating Impact For a Better Tomorrow Some Random Text To Fill.</p>  
       <a href="<?php echo ROOT_URL; ?>projects.php" class="btn-get-started scrollto">View Projects</a> 
     </div>
-
-   
 
   </section><!-- #intro -->
 
@@ -299,9 +266,9 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <img class="advanced-feature-img-left" src="img/advanced-feature-2.jpg" alt="" style="width: 37em;height:20em">
+              <img class="advanced-feature-img-left  wow fadeInLeft" src="img/advanced-feature-2.jpg" alt="" >
               <div class="wow fadeInRight">
-                <h2>The students get the opportunity to:</h2>
+               <h2>&nbsp;&nbsp;The students get the opportunity to:</h2>
                 <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-duration="0.5s"></i>
                 <p class="wow fadeInRight" data-wow-duration="0.5s">Grow their knowledge on developer technologies and more through peer to peer workshops and events.</p>
                 <i class="ion-ios-color-filter-outline wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s"></i>
@@ -314,8 +281,8 @@
         </div>
       </div>
 
-      <!--
-      <div class="features-row section-bg">
+      
+      <!--<div class="features-row section-bg">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -330,20 +297,19 @@
             </div>
           </div>
         </div>
-      </div>
-    --> 
+      </div> -->
     </section><!-- #advanced-features -->
        
        
     <!--==========================
       Videos Section
     ============================-->
-    <section id="videos"  class="section-bg">
+    <section id="features">
    
       <div class="container">
          <div class="row">
           <div class="col-lg-4 wow fadeInLeft">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/AAin71VkbzQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/RnWWBusoySs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
           <div class="col-lg-4 wow fadeInRight">
@@ -517,10 +483,15 @@
           <br>
           <br>
         </div>
+        
         <div class="col-lg-3 col-md-3 col-sm-3">
          <strong>Copyright ©</strong> 
-        <br>
-        <strong>Indian Institute of Technology, Patna</strong>
+         <br>
+         <strong>Developer Student Club</strong>
+         <br>
+         <strong>Indian Institute of Technology, Patna</strong>
+         <br>
+         <a href="#" class="btn-get-started scrollto" >Submit A Project Idea</a>  
          </div>
          <br><br>
       </div>
