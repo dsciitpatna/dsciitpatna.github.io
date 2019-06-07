@@ -85,19 +85,19 @@
   <header id="header">
     <div class="container">
       <div id="logo" class="pull-left">
-        <h1><a href="#intro"><img src="img/logo.png" alt="" title="" width="30%"></a></h1>
+        <h1><a href="./"><img src="img/logo.png" alt="" title="" width="30%"></a></h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="<?php echo ROOT_URL; ?>#intro">Home</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>#about">About Us</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>gallery.php">Gallery</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>team.php">Team</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>#contact">Contact Us</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>projects.php">Projects</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>leaderboard.php">Leaderboard</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>timeline.php">Timeline</a></li>
+          <li class="menu-active"><a href="./">Home</a></li>
+          <li><a href="./#about">About Us</a></li>
+          <li><a href="./gallery.php">Gallery</a></li>
+          <li><a href="./team.php">Team</a></li>
+          <li><a href="./#contact">Contact Us</a></li>
+          <li><a href="./projects.php">Projects</a></li>
+          <li><a href="./leaderboard.php">Leaderboard</a></li>
+          <li><a href="./timeline.php">Timeline</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -110,7 +110,7 @@
     <div class="intro-text">
       <h2>DSC IIT Patna</h2>
       <p>Creating Impact For a Better Tomorrow Some Random Text To Fill.</p>  
-      <a href="<?php echo ROOT_URL; ?>projects.php" class="btn-get-started scrollto">View Projects</a> 
+      <a href="./projects.php" class="btn-get-started scrollto">View Projects</a> 
     </div>
 
   </section><!-- #intro -->
