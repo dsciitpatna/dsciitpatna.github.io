@@ -89,7 +89,7 @@
         <div class="section-header">
           <h3 class="section-title">Gallery</h3>
           <span class="section-divider"></span>
-          <p class="section-description text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description text-center"></p>
         </div>
 
         <div class="row no-gutters">
@@ -147,6 +147,8 @@
       </div>
     </section><!-- #gallery -->
     </div>
+    <br>
+    <br>
 
    <!--==========================
     Footer
