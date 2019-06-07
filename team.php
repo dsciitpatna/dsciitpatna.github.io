@@ -98,7 +98,7 @@
         <div class="bar" id="bar6"></div>
         <div class="bar2" id="bar7"></div>
         <div class="bar2" id="bar8"></div>
-        <div id="person"><img id="imgModule" src="img/team/Shivansh_Shukla-removebg (1) (1).png"></div>
+        <div id="person"><img id="imgModule" src="img/team/vatsal-removebg.png"></div>
       </div>
     </section>
 
@@ -692,6 +692,8 @@
         <div class="col-lg-3 col-md-3 col-sm-3">
          <strong>Copyright ©</strong> 
         <br>
+        <strong>Developer Student Club</strong>
+         <br>
         <strong>Indian Institute of Technology, Patna</strong>
          </div>
          <br><br>
@@ -719,17 +721,19 @@
 
   <script>
       var peopleList = [
-      "https://goj2.com/wp-content/uploads/2019/01/zacSlider.png",
-      "https://goj2.com/wp-content/uploads/2019/01/hughSlider.png",
-      "https://goj2.com/wp-content/uploads/2019/01/jimmySlider.png",
-      "https://goj2.com/wp-content/uploads/2019/01/melanieSlider.png",
-      "https://goj2.com/wp-content/uploads/2019/01/mSlider.png",
-      "https://goj2.com/wp-content/uploads/2019/01/troySlider.png",
-      "https://goj2.com/wp-content/uploads/2019/01/chelseaSlider.png",
-      "https://goj2.com/wp-content/uploads/2019/01/erikSlider.png",
-      "https://goj2.com/wp-content/uploads/2019/01/hannahSlider.png",
-      "https://goj2.com/wp-content/uploads/2019/01/mattSlider.png"
-    ]
+        "img/team/piyush-removebg.png",
+        "img/team/Shivansh_Shukla-removebg (1) (1).png",
+        "img/team/mayank-removebg.png",
+      "img/team/akshat-removebg.png",
+     "img/team/harsh-removebg.png",
+      "img/team/amartya__2_-removebg (1).png",
+     "img/team/anubhav-removebg.png",
+     "img/team/hitvardhan-removebg.png",
+      "img/team/arya-removebg.png",
+      "img/team/Deepanjan-removebg.png",
+      "img/team/amish__2_-removebg.png",
+      "img/team/shreya-removebg.png"
+     ]
     var indexLength = peopleList.length;
     var currIndex = 0;
     document.getElementById("person").addEventListener("animationiteration", function() {
