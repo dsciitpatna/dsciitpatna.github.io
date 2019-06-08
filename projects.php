@@ -67,61 +67,51 @@ mysqli_close($mysqli);
 
   <style>
     @media only screen and (max-width: 768px) {
-      
-.desktop{
-  display:none;
-}
-.mobile{
-  display:inline;
-}
+      .desktop{
+        display:none;
+      }
+      .mobile{
+        display:inline;
+      }
+    }
 
-
-
-}
-@media only screen and (min-width: 768px) {
-
-  .mobile {display:none;}
-  .desktop{display:inline;}
-  
-  }
-  @media only screen and (min-width: 1525px) {
-
-    .mobile {display:none;}
-    
+    @media only screen and (min-width: 768px) {
+      .mobile {display:none;}
+      .desktop{display:inline;}
+    }
+    @media only screen and (min-width: 1525px) {
+      .mobile {display:none;}
     }
 
 
-    
+        
     #gallery .gallery-item figure .github {
-  position :absolute;
-  top:50%;
-  left:50%;
-  height:100%;
-  width:100%;
-  transform: scaleY(0);
-  transition:transform .5s;
-}
-#gallery .gallery-item figure .ctr{
-  position:absolute;
-  transform: translate(-50%,-50%);
-  text-align:center;
-  padding-top:25%;
-  background:rgba(0, 0, 0, 0.1);
-  opacity:0;
-}
-#gallery .gallery-item figure:hover .ctr{
-  opacity:1;
-}
+      position :absolute;
+      top:50%;
+      left:50%;
+      height:100%;
+      width:100%;
+      transform: scaleY(0);
+      transition:transform .5s;
+    }
+    #gallery .gallery-item figure .ctr{
+      position:absolute;
+      transform: translate(-50%,-50%);
+      text-align:center;
+      padding-top:25%;
+      background:rgba(0, 0, 0, 0.1);
+      opacity:0;
+    }
+    #gallery .gallery-item figure:hover .ctr{
+      opacity:1;
+    }
 
 
-#gallery #gallery-flters li:hover,
-#gallery #gallery-flters li.filter-active {
-    background:  linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
-    color: #fff;
-}
-
-
-
+    #gallery #gallery-flters li:hover,
+    #gallery #gallery-flters li.filter-active {
+        background:  linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+        color: #fff;
+    }
   </style>
 </head>
 
@@ -185,7 +175,7 @@ mysqli_close($mysqli);
 
           <div class="row">
             <div class="col-lg-12">
-              <ul id="gallery-flters">
+              <ul id="gallery-flters" class="projects">
                 <li data-filter="*" class="filter-active">All</li>
                 <li data-filter=".filter-web">Web</li>
                 <li data-filter=".filter-app">App</li>
@@ -197,7 +187,7 @@ mysqli_close($mysqli);
             </div>
           </div>
 
-          <div class="row gallery-container">
+          <div class="row gallery-container projects">
 
             <?php foreach ($projects as $project) : ?>
               <div class="col-lg-4 col-md-6 gallery-item filter-<?php echo $project['filter'] ?>" data-wow-delay="0.2s">
@@ -235,7 +225,7 @@ mysqli_close($mysqli);
 
           <div class="row">
             <div class="col-lg-12">
-              <ul id="gallery-flters">
+              <ul id="gallery-flters" class="buddingPojects">
                 <li data-filter="*" class="filter-active">All</li>
                 <li data-filter=".filter-web">Web</li>
                 <li data-filter=".filter-app">App</li>
@@ -247,7 +237,7 @@ mysqli_close($mysqli);
             </div>
           </div>
 
-          <div class="row gallery-container">
+          <div class="row gallery-container buddingPojects">
 
             <?php foreach ($buddingProjects as $buddingProject) : ?>
               <div class="col-lg-4 col-md-6 gallery-item filter-<?php echo $buddingProject['filter'] ?>" data-wow-delay="0.2s">
