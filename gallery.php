@@ -1,3 +1,6 @@
+<?php 
+  require('config/config.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,16 +64,16 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="./"><img src="img/logo.png" alt="" title="" width="30%"></a></h1>
+        <h1><a href="<?php echo ROOT_URL; ?>"><img src="img/logo.png" alt="" title="" width="30%"></a></h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="./">Home</a></li>
-          <li><a href="./team.php">Team</a></li>
-          <li><a href="./projects.php">Projects</a></li>
-          <li><a href="./leaderboard.php">Leaderboard</a></li>
-          <li><a href="./timeline.php">Timeline</a></li>
+          <li class="menu-active"><a href="<?php echo ROOT_URL; ?>">Home</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>team.php">Team</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>projects.php">Projects</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>leaderboard.php">Leaderboard</a></li>
+          <li><a href="<?php echo ROOT_URL; ?>timeline.php">Timeline</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -86,7 +89,7 @@
         <div class="section-header">
           <h3 class="section-title">Gallery</h3>
           <span class="section-divider"></span>
-          <p class="section-description text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description text-center"></p>
         </div>
 
         <div class="row no-gutters">
@@ -144,6 +147,8 @@
       </div>
     </section><!-- #gallery -->
     </div>
+    <br>
+    <br>
 
    <!--==========================
     Footer
