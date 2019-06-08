@@ -83,12 +83,13 @@
     position: relative;
     height: 360px;
     overflow: hidden;
+    padding:10px;
 }
 
 #gallery .gallery-item figure {
     background: #000;
     overflow: hidden;
-    height: 240px;
+    height: 226px;
     position: relative;
     border-radius: 4px 4px 0 0;
     margin: 0;

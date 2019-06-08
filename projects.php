@@ -33,7 +33,7 @@
   <link href="./projects/lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
   <link href="./projects/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
   <link href="./projects/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-  <link href="./projects/css/style.css" rel="stylesheet" />
+  <link href="./projects/css/style.css?version=51" rel="stylesheet" />
 
   <style>
     @media only screen and (max-width: 768px) {
@@ -89,6 +89,7 @@
     background:  linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
     color: #fff;
 }
+
 
 
   </style>
@@ -340,6 +341,8 @@
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
          <strong>Copyright ©</strong> 
+        <br>
+        <strong>Developer Student Club</strong>
         <br>
         <strong>Indian Institute of Technology, Patna</strong>
          </div>
