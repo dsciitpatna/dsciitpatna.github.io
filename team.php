@@ -28,6 +28,7 @@
 
    <!-- Team Stylesheet File -->
    <link href="css/team.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -129,14 +130,20 @@
                                 </p> -->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -144,7 +151,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4>Vatsal Singhal</h4>
                             <span>Lead<br><br></span>
@@ -174,14 +181,20 @@
                                 </p> -->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -189,7 +202,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4>Piyush Chauhan</h4>
                             <span>Technical Lead<br><br></span>
@@ -207,14 +220,20 @@
                                 </p>-->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -222,7 +241,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4>Shivansh Shukla</h4>
                             <span>Technical Lead<br><br></span>
@@ -252,14 +271,20 @@
                                 </p>-->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -267,7 +292,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4>Mayank Aggarwal</h4>
                             <span>Innovation Lead<br><br></span>
@@ -285,14 +310,20 @@
                                 </p>-->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -300,7 +331,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4>Akshat Jain</h4>
                             <span>Media and PR Lead<br><br></span>
@@ -319,14 +350,20 @@
                                 </p>-->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -334,7 +371,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4> Amish Mittal</h4>
                             <span> Design Lead<br><br></span>
@@ -366,14 +403,20 @@
                                 </p>-->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -381,7 +424,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4>Harsh Jindal</h4>
                             <span>Department Lead<br>(Web App)<br><br></span>
@@ -399,14 +442,20 @@
                                 </p>-->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -414,7 +463,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4>Amartya Mondal</h4>
                             <span>Department Lead<br>(App)<br><br></span>
@@ -432,14 +481,20 @@
                                 </p>-->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -447,7 +502,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4>Anubhav Jangra </h4>
                             <span>Department Lead<br>( ML )<br><br> </span>
@@ -465,14 +520,20 @@
                                 </p>-->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -480,7 +541,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4> Hit Vardhan</h4>
                             <span>Department Lead<br>(Blockchain and Cryptocurrency) </span>
@@ -498,14 +559,20 @@
                                 </p>-->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -513,7 +580,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4> Arya Das</h4>
                             <span> Department Lead<br>(IoT)<br><br></span>
@@ -531,14 +598,20 @@
                                 </p>-->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -546,7 +619,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4> Deepanjan Datta</h4>
                             <span>Department Lead<br>(Cloud APIs)<br><br> </span>
@@ -576,14 +649,20 @@
                                 </p>-->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -591,7 +670,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4> Amish Mittal</h4>
                             <span>Junior Representative<br><br></span>
@@ -609,14 +688,20 @@
                                 </p>-->
                                 <div class="social">
                                     <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <li class="facebook">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="mail">
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <a href="#"><i class="fa fa-envelope fa-stack-1x fa-inverse" style="font-size:15px; background: #808B96;padding:1px;border-radius: 50%; " ></i></a>
+                                        </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -624,7 +709,7 @@
                         </div>
                         <div class="info">
                             <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                <a href="#"><i class="fa fa-gg"></i></a>
                             </span>
                             <h4>Shreya Sinha </h4>
                             <span> Female Representative<br><br></span>
