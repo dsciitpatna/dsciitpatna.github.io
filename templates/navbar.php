@@ -16,7 +16,7 @@
         </li>
         <?php } else { ?>
           <li class="nav-item">
-          <a class="nav-link" href="./login/adminlogin.php">Admin Login</a>
+          <a class="nav-link" href="./adminlogin.php">Admin Login</a>
         </li>
         <?php } ?>
       </ul>

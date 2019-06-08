@@ -1,6 +1,6 @@
 <?php
 // Importing database connection
-require("../config/db.php");
+require("./config/db.php");
 
 $error = 0;
 
@@ -37,7 +37,7 @@ if(isset($_GET['token'])) {
 
 
 ?>
-<?php require("../templates/header.php"); ?>
+<?php require("./templates/header.php"); ?>
 <?php if (!$error) : ?>
     <div class="container" style="max-width: 600px; margin-top: 50px">
         <form class="shadow" action="" method="POST" style="padding : 50px">
@@ -53,5 +53,5 @@ if(isset($_GET['token'])) {
 <?php else : ?>
     <h1 class="text-danger text-center">Link Expired</h1>
 <?php endif; ?>
-<?php require("../templates/footer.php");
+<?php require("./templates/footer.php");
 ?>
