@@ -1,6 +1,3 @@
-<?php 
-  require('config/config.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,17 +65,17 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro"><img src="img/logo.png" alt="" title="" width="30%"></a></h1>
+        <h1><a href="./"><img src="img/logo.png" alt="" title="" width="30%"></a></h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="<?php echo ROOT_URL; ?>#intro">Home</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>gallery.php">Gallery</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>team.php">Team</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>projects.php">Projects</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>leaderboard.php">Leaderboard</a></li>
-          <li><a href="<?php echo ROOT_URL; ?>timeline.php">Timeline</a></li>
+          <li class="menu-active"><a href="./">Home</a></li>
+          <li><a href="./gallery.php">Gallery</a></li>
+          <li><a href="./team.php">Team</a></li>
+          <li><a href="./projects.php">Projects</a></li>
+          <li><a href="./leaderboard.php">Leaderboard</a></li>
+          <li><a href="./timeline.php">Timeline</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -101,7 +98,7 @@
         <div class="bar" id="bar6"></div>
         <div class="bar2" id="bar7"></div>
         <div class="bar2" id="bar8"></div>
-        <div id="person"><img id="imgModule" src="img/team/vatsal-removebg.png"></div>
+        <div id="person"><img id="imgModule" src="img/team/Shivansh_Shukla-removebg (1) (1).png"></div>
       </div>
     </section>
 
@@ -695,8 +692,6 @@
         <div class="col-lg-3 col-md-3 col-sm-3">
          <strong>Copyright ©</strong> 
         <br>
-        <strong>Developer Student Club</strong>
-         <br>
         <strong>Indian Institute of Technology, Patna</strong>
          </div>
          <br><br>
@@ -724,19 +719,17 @@
 
   <script>
       var peopleList = [
-        "img/team/piyush-removebg.png",
-        "img/team/Shivansh_Shukla-removebg (1) (1).png",
-        "img/team/mayank-removebg.png",
-      "img/team/akshat-removebg.png",
-     "img/team/harsh-removebg.png",
-      "img/team/amartya__2_-removebg (1).png",
-     "img/team/anubhav-removebg.png",
-     "img/team/hitvardhan-removebg.png",
-      "img/team/arya-removebg.png",
-      "img/team/Deepanjan-removebg.png",
-      "img/team/amish__2_-removebg.png",
-      "img/team/shreya-removebg.png"
-     ]
+      "https://goj2.com/wp-content/uploads/2019/01/zacSlider.png",
+      "https://goj2.com/wp-content/uploads/2019/01/hughSlider.png",
+      "https://goj2.com/wp-content/uploads/2019/01/jimmySlider.png",
+      "https://goj2.com/wp-content/uploads/2019/01/melanieSlider.png",
+      "https://goj2.com/wp-content/uploads/2019/01/mSlider.png",
+      "https://goj2.com/wp-content/uploads/2019/01/troySlider.png",
+      "https://goj2.com/wp-content/uploads/2019/01/chelseaSlider.png",
+      "https://goj2.com/wp-content/uploads/2019/01/erikSlider.png",
+      "https://goj2.com/wp-content/uploads/2019/01/hannahSlider.png",
+      "https://goj2.com/wp-content/uploads/2019/01/mattSlider.png"
+    ]
     var indexLength = peopleList.length;
     var currIndex = 0;
     document.getElementById("person").addEventListener("animationiteration", function() {
