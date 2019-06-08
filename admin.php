@@ -46,7 +46,6 @@
         }
         
     }
-
     $addsuccess="";
     $addfailure="";
     if (isset($_POST['adduser'])) {
@@ -71,7 +70,6 @@
         }
         
     }
-
     $deletesuccess="";
     $deletefailure="";
     if (isset($_POST['deleteuser'])) {
@@ -92,9 +90,6 @@
         }
         
     }
-
-
-
 
 
     $addeventsuccess="";
@@ -121,7 +116,6 @@
             }
         }
     }
-
     $deleteeventsuccess="";
     $deleteeventfailure="";
     if (isset($_POST['deleteevent'])) {
@@ -138,6 +132,97 @@
                 $deleteeventfailure="Error";
             } else {
                 $deleteeventsuccess="Deleted event record";
+            }
+        }
+        
+    }
+
+
+    $addprojectsuccess="";
+    $addprojectfailure="";
+    if (isset($_POST['addproject'])) {
+        $title= mysqli_real_escape_string($mysqli, $_POST['title']);
+        $description= mysqli_real_escape_string($mysqli, $_POST['description']);
+        $filter= mysqli_real_escape_string($mysqli, $_POST['filter']);
+        $github_link= mysqli_real_escape_string($mysqli, $_POST['github_link']);
+        $sql = "SELECT * FROM projects WHERE title = '" . $title . "'";
+        $res = $mysqli->query($sql);
+        $res = mysqli_fetch_assoc($res);
+        if($res) {
+            $addprojectfailure="Project already exists";
+        } else {
+            // create sql
+            $sql = "INSERT INTO projects(title,description,filter,github_link) VALUES('$title','$description','$filter','$github_link')";
+
+            // save to db and check
+            if(mysqli_query($mysqli, $sql)){
+                $addprojectsuccess="Project added";
+            } else {
+                $addprojectfailure="Error";
+            }
+        }
+    }
+    $deleteprojectsuccess="";
+    $deleteprojectfailure="";
+    if (isset($_POST['deleteproject'])) {
+        $title= mysqli_real_escape_string($mysqli, $_POST['title']);
+        $sql = "SELECT * FROM projects WHERE title = '" . $title . "'";
+        $res = $mysqli->query($sql);
+        $res = mysqli_fetch_assoc($res);
+        if(!$res) {
+            $deleteprojectfailure="No data";
+        } else {
+            $sql = "DELETE FROM projects WHERE title = '" . $title . "'";
+            $ret = $mysqli->query($sql);
+            if(!$ret) {
+                $deleteprojectfailure="Error";
+            } else {
+                $deleteprojectsuccess="Deleted project record";
+            }
+        }
+        
+    }
+
+
+    $addbuddingprojectsuccess="";
+    $addbuddingprojectfailure="";
+    if (isset($_POST['addbuddingproject'])) {
+        $title= mysqli_real_escape_string($mysqli, $_POST['title']);
+        $description= mysqli_real_escape_string($mysqli, $_POST['description']);
+        $filter= mysqli_real_escape_string($mysqli, $_POST['filter']);
+        $sql = "SELECT * FROM buddingProjects WHERE title = '" . $title . "'";
+        $res = $mysqli->query($sql);
+        $res = mysqli_fetch_assoc($res);
+        if($res) {
+            $addbuddingprojectfailure="Budding Project already exists";
+        } else {
+            // create sql
+            $sql = "INSERT INTO buddingProjects(title,description,filter) VALUES('$title','$description','$filter')";
+
+            // save to db and check
+            if(mysqli_query($mysqli, $sql)){
+                $addbuddingprojectsuccess="Budding Project added";
+            } else {
+                $addbuddingprojectfailure="Error";
+            }
+        }
+    }
+    $deletebuddingprojectsuccess="";
+    $deletebuddingprojectfailure="";
+    if (isset($_POST['deletebuddingproject'])) {
+        $title= mysqli_real_escape_string($mysqli, $_POST['title']);
+        $sql = "SELECT * FROM buddingProjects WHERE title = '" . $title . "'";
+        $res = $mysqli->query($sql);
+        $res = mysqli_fetch_assoc($res);
+        if(!$res) {
+            $deletebuddingprojectfailure="No data";
+        } else {
+            $sql = "DELETE FROM buddingProjects WHERE title = '" . $title . "'";
+            $ret = $mysqli->query($sql);
+            if(!$ret) {
+                $deleteprojectfailure="Error";
+            } else {
+                $deleteprojectsuccess="Deleted budding project record";
             }
         }
         
@@ -195,12 +280,15 @@
                 <div class="nav tabs">
                     <button data-target="#one" class="active">Leaderboard</button>
                     <button data-target="#two">Timeline</button>
+                    <button data-target="#three">Projects</button>
+                    <button data-target="#four">Budding Projects</button>
                 </div>
                 <div class="container">
                     <form action="" method="POST" style="float: right">
                         <input type="submit" name="logout" value="Logout" class="btn btn-primary" />
                     </form>
                 </div>  
+
                 <!-- Id=1 -->
                 <div class="panel active" id="one" style="clear: both">
                     <div class="container-fluid">  
@@ -337,6 +425,118 @@
                         <br><br>
                     </div>
                 </div>
+
+
+                <!-- Id=3 -->
+                <div class="panel" id="three">
+                    <div class="container-fluid">  
+
+                        <h2 class="text-center">Add Project</h2>
+                            <div class="container" style="max-width: 600px;">
+                                <form class="shadow" action="" method="POST" style="padding : 50px">
+                                    <div class="form-group">
+                                        <label for="name">Title</label>
+                                        <input type="text" class="form-control" name="title" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="filter">Filter</label>
+                                        <select class="browser-default custom-select" name="filter">
+                                            <option selected value="web">Web</option>
+                                            <option value="app">App</option>
+                                            <option value="ml">ML</option>
+                                            <option value="block">Blockchain & Cryptocurrency</option>
+                                            <option value="iot">IOT</option>
+                                            <option value="cloud">Cloud</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">Short Description</label>
+                                        <input type="text" class="form-control" name="description" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="github_link">Github Link</label>
+                                        <input type="text" class="form-control" name="github_link" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="addproject" class="btn btn-primary" />
+                                    </div>
+                                    <h5 class="text-success"><?php echo $addprojectsuccess?></h5>
+                                    <h5 class="text-danger"><?php echo $addprojectfailure?></h5>
+                                </form>
+                            </div>
+                        <br><br>
+                        
+                        <h2 class="text-center">Delete Project</h2>
+                        <div class="container" style="max-width: 600px;">
+                            <form class="shadow" action="" method="POST" style="padding : 50px">
+                                <div class="form-group">
+                                    <label for="name">Title</label>
+                                    <input type="text" class="form-control" name="title" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="deleteproject" class="btn btn-primary" />
+                                </div>
+                                <h5 class="text-success"><?php echo $deleteprojectsuccess?></h5>
+                                <h5 class="text-danger"><?php echo $deleteprojectfailure?></h5>
+                            </form>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+
+                <!-- Id=4 -->
+                <div class="panel" id="four">
+                    <div class="container-fluid">  
+
+                        <h2 class="text-center">Add Budding Project</h2>
+                            <div class="container" style="max-width: 600px;">
+                                <form class="shadow" action="" method="POST" style="padding : 50px">
+                                    <div class="form-group">
+                                        <label for="name">Title</label>
+                                        <input type="text" class="form-control" name="title" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="filter">Filter</label>
+                                        <select class="browser-default custom-select" name="filter">
+                                            <option selected value="web">Web</option>
+                                            <option value="app">App</option>
+                                            <option value="ml">ML</option>
+                                            <option value="block">Blockchain & Cryptocurrency</option>
+                                            <option value="iot">IOT</option>
+                                            <option value="cloud">Cloud</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">Short Description</label>
+                                        <input type="text" class="form-control" name="description" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="addbuddingproject" class="btn btn-primary" />
+                                    </div>
+                                    <h5 class="text-success"><?php echo $addbuddingprojectsuccess?></h5>
+                                    <h5 class="text-danger"><?php echo $addbuddingprojectfailure?></h5>
+                                </form>
+                            </div>
+                        <br><br>
+                        
+                        <h2 class="text-center">Delete Budding Project</h2>
+                        <div class="container" style="max-width: 600px;">
+                            <form class="shadow" action="" method="POST" style="padding : 50px">
+                                <div class="form-group">
+                                    <label for="name">Title</label>
+                                    <input type="text" class="form-control" name="title" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="deletebuddingproject" class="btn btn-primary" />
+                                </div>
+                                <h5 class="text-success"><?php echo $deletebuddingprojectsuccess?></h5>
+                                <h5 class="text-danger"><?php echo $deletebuddingprojectfailure?></h5>
+                            </form>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+
             </div>
         </div>
                         

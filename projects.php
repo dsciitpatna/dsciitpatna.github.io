@@ -1,3 +1,33 @@
+<?php
+require('config/db.php');
+session_start();
+
+// Create Query
+$query = 'SELECT * FROM projects ORDER BY created_date DESC';
+
+// Get Result
+$result = mysqli_query($mysqli, $query);
+
+// Fetch Data
+$projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+// Create Query
+$query = 'SELECT * FROM buddingProjects ORDER BY created_date DESC';
+
+// Get Result
+$result = mysqli_query($mysqli, $query);
+
+// Fetch Data
+$buddingProjects = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+// Free Result
+mysqli_free_result($result);
+
+// Close Connection
+mysqli_close($mysqli);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -145,7 +175,7 @@
   </header><!-- #header -->
           
      <!--==========================
-      Gallery Section
+      Projects Section
     ============================-->
     <section id="gallery" class="section-bg">
         <div class="container">
@@ -160,7 +190,7 @@
                 <li data-filter=".filter-web">Web</li>
                 <li data-filter=".filter-app">App</li>
                 <li data-filter=".filter-ml">ML</li>
-                <li data-filter=".filter-block">Blo & Cry</li>
+                <li data-filter=".filter-block">Blockchain & Cry</li>
                 <li data-filter=".filter-iot">IoT</li>
                 <li data-filter=".filter-cloud">Cloud APIs</li>
               </ul>
@@ -168,124 +198,78 @@
           </div>
 
           <div class="row gallery-container">
-            <div class="col-lg-4 col-md-6 gallery-item filter-web">
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                    <a href="#" target="_blank">
-                      <button type="button" class="btn btn-outline-light">View Project</button>
-                    </a>
-                   </div>
-                </figure>
 
-                <div class="gallery-info">
-                  <h4>Project 1</h4>
-                  <p>description</p>
-                </div>
-              </div>
-            </div>
+            <?php foreach ($projects as $project) : ?>
+              <div class="col-lg-4 col-md-6 gallery-item filter-<?php echo $project['filter'] ?>" data-wow-delay="0.2s">
+                <div class="gallery-wrap">
+                  <figure>
+                    <img src="img/e-learning.jpg" class="img-fluid" alt="" />
+                    <div class="github ctr">
+                      <a href="<?php echo $project['github_link'] ?>" target="_blank">
+                        <button type="button" class="btn btn-outline-light">View Project</button>
+                      </a>
+                    </div>
+                  </figure>
 
-            <div
-              class="col-lg-4 col-md-6 gallery-item filter-cloud"
-              data-wow-delay="0.2s"
-            >
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                    <a href="#" target="_blank">
-                      <button type="button" class="btn btn-outline-light">View Project</button>
-                    </a>
-                   </div>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Project 2</h4>
-                  <p>description</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item filter-iot">
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                    <a href="#" target="_blank">
-                      <button type="button" class="btn btn-outline-light">View Project</button>
-                    </a>
-                   </div>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Project 2</h4>
-                  <p>description</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 gallery-item filter-ml"
-              data-wow-delay="0.2s"
-            >
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                    <a href="#" target="_blank">
-                      <button type="button" class="btn btn-outline-light">View Project</button>
-                    </a>
-                   </div>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Project 3</h4>
-                  <p>description</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item filter-app">
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                    <a href="#" target="_blank">
-                      <button type="button" class="btn btn-outline-light">View Project</button>
-                    </a>
+                  <div class="gallery-info">
+                    <h4><?php echo $project['title'] ?></h4>
+                    <p><?php echo $project['description'] ?></p>
                   </div>
-                </figure>
-
-                <div class="gallery-info">
-                  <h4>Project 1</h4>
-                  <p>description</p>
                 </div>
               </div>
+            <?php endforeach; ?>
+
             </div>
+        </div>
+      </section>
+      <!-- #gallery -->
 
-            <div
-              class="col-lg-4 col-md-6 gallery-item filter-block"
-              data-wow-delay="0.1s"
-            >
-              <div class="gallery-wrap">
-                <figure>
-                  <img src="img/e-learning.jpg" class="img-fluid" alt="" />
-                  <div class="github ctr">
-                    <a href="#" target="_blank">
-                      <button type="button" class="btn btn-outline-light">View Project</button>
-                    </a>
-                   </div>
-                </figure>
+      <!--==========================
+      Budding Projects Section
+    ============================-->
+    <section id="gallery" class="section-bg">
+        <div class="container">
+          <header class="section-header">
+            <h3 class="section-title">Budding Projects</h3>
+          </header>
 
-                <div class="gallery-info">
-                  <h4>Project 3</h4>
-                  <p>description</p>
-                </div>
-              </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <ul id="gallery-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-web">Web</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-ml">ML</li>
+                <li data-filter=".filter-block">Blockchain & Cry</li>
+                <li data-filter=".filter-iot">IoT</li>
+                <li data-filter=".filter-cloud">Cloud APIs</li>
+              </ul>
             </div>
-
           </div>
+
+          <div class="row gallery-container">
+
+            <?php foreach ($buddingProjects as $buddingProject) : ?>
+              <div class="col-lg-4 col-md-6 gallery-item filter-<?php echo $buddingProject['filter'] ?>" data-wow-delay="0.2s">
+                <div class="gallery-wrap">
+                  <figure>
+                    <img src="img/e-learning.jpg" class="img-fluid" alt="" />
+                    <div class="github ctr">
+                      <a href="#" target="_blank">
+                        <button type="button" class="btn btn-outline-light">View Project</button>
+                      </a>
+                    </div>
+                  </figure>
+
+                  <div class="gallery-info">
+                    <h4><?php echo $buddingProject['title'] ?></h4>
+                    <p><?php echo $buddingProject['description'] ?></p>
+                  </div>
+                </div>
+              </div>
+            <?php endforeach; ?>
+
+            </div>
         </div>
       </section>
       <!-- #gallery -->
