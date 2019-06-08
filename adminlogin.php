@@ -1,8 +1,8 @@
 <?php
 
 // Enabling Database Connection
-require("../config/db.php");
-require("../config/config.php");
+require("./config/db.php");
+require("./config/config.php");
 
 $email = $password = '';
 $errors = array('email' => '', 'reset-email' => '', 'noData' => '', 'resetPassword' => '', 'resetPwdMailInfo' => '');
@@ -27,7 +27,7 @@ if (isset($_POST['reset-pwd'])) {
             $token  = sha1(uniqid($username, true));
             $sql = "UPDATE admins SET token = '" . $token . "',timestamp = '" . $timestamp . "' WHERE email = '" . $resetemail . "'";
             $result = $mysqli->query($sql);
-            $url = ROOT_URL."/login/linkpage.php?token=$token";
+            $url = ROOT_URL."linkpage.php?token=$token";
             // Send the mail
 
             $to=$resetemail;
@@ -91,7 +91,7 @@ if (isset($_POST["submit-button"])) {
                 if ($row['password'] == $password) {
                     session_start();
                     $_SESSION["email"] = $email;
-                    header("Location: ../admin.php");
+                    header("Location: ./admin.php");
                 } else {
                     $errors['noData']="Invalid id/password match";
                     $errors['email'] = "";
@@ -113,7 +113,7 @@ if (isset($_POST["submit-button"])) {
 
 
 
-<?php require("../templates/header.php"); ?>
+<?php require("./templates/header.php"); ?>
 
 <?php if ($errors['resetPwdMailInfo'] === 1 ){ ?>
     <div class='text-center'><i class='fas fa-check-circle'></i><h5>Reset password-link mail sent</h5></div>
@@ -179,4 +179,4 @@ if (isset($_POST["submit-button"])) {
 </div>
 
 
-<?php require("../templates/footer.php");
+<?php require("./templates/footer.php");
