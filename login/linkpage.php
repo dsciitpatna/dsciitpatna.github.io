@@ -1,7 +1,6 @@
 <?php
 // Importing database connection
 require("../config/db.php");
-require("../config/config.php");
 
 $error = 0;
 
