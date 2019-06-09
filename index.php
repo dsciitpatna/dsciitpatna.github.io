@@ -82,7 +82,7 @@
   <header id="header">
     <div class="container">
       <div id="logo" class="pull-left">
-        <h1><a href="./"><img src="img/logo.png" alt="" title="" width="30%"></a></h1>
+        <h1><a href="./"><img src="img/logo.png" alt="" title="" width="30%" id='logoimg'></a></h1>
       </div>
 
       <nav id="nav-menu-container">
