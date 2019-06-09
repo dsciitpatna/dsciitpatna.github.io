@@ -81,8 +81,9 @@
   ============================-->
   <header id="header">
     <div class="container">
-      <div id="logo" class="pull-left">
-        <h1><a href="./"><img src="img/logo.png" alt="" title="" width="30%" id='logoimg'></a></h1>
+      <div id="logo" class="pull-left">                  
+          <h1><a href="./"><img src="img/logo.png" alt="" title="" width="30%" id='logoimg'></a></h1>
+           
       </div>
 
       <nav id="nav-menu-container">
@@ -108,6 +109,7 @@
       <h2>DSC IIT Patna</h2>
       <p>Creating Impact For a Better Tomorrow Some Random Text To Fill.</p>  
       <a href="./projects.php" class="btn-get-started scrollto">View Projects</a> 
+      <a href="#" class="btn-get-started scrollto" >Submit A Project Idea</a> 
     </div>
 
   </section><!-- #intro -->
@@ -368,12 +370,12 @@
     <!--==========================
       Map Section
     ============================-->
-    <section id="map" style="height: calc( 60vh )">
+    <!-- <section id="map" style="height: calc( 60vh )">
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721" 
         width="100%" height="100%" frameborder="0" style="border: 0" allowfullscreen>
       </iframe>
-    </section>
+    </section> -->
 
     <!--==========================
       Contact Section
@@ -487,8 +489,7 @@
          <strong>Developer Student Club</strong>
          <br>
          <strong>Indian Institute of Technology, Patna</strong>
-         <br>
-         <a href="#" class="btn-get-started scrollto" >Submit A Project Idea</a>  
+         <br>         
          </div>
          <br><br>
       </div>
