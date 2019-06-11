@@ -1,3 +1,20 @@
+<?php
+  require('config/db.php');
+  session_start();
+
+  $query = 'SELECT * FROM announcements ORDER BY date DESC';
+  $result = mysqli_query($mysqli, $query);
+  $announcements = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+  if(sizeof($announcements) >= 5) {
+    $announcements=array_slice($announcements,0,5);
+  }
+
+  mysqli_free_result($result);
+  mysqli_close($mysqli);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +36,8 @@
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Main Stylesheet File -->
   <link href="css/style.css?version=51" rel="stylesheet">
 
@@ -43,7 +62,38 @@
         .mobile {display:none;}
       }
 
-    
+        
+    .announcement-header {
+        font-size: 32px;
+        color: #111;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 15px;
+    }
+
+    .announcement-header::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 120px;
+        height: 1px;
+        background: #ddd;
+        bottom: 1px;
+        left: calc(50% - 60px);
+    }
+
+    .announcement-header::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: #18d26e;
+        bottom: 0;
+        left: calc(50% - 20px);
+    }
 
   </style>
 </head>
@@ -179,61 +229,20 @@
     <!-- #call-to-action -->  
    
 
-    
-
-
-
-
-
     <!--==========================
-      Product Featuress Section
+      Announcements Section
     ============================-->
     <section id="features">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-8 offset-lg-4">
-            <div class="section-header wow fadeIn" data-wow-duration="1s">
-              <h3 class="section-title">Featuress</h3>
-              <!--<span class="section-divider"></span>-->
-            </div>
+      <div class="container wow fadeInRight">
+        <h3 class="text-center announcement-header" style="text-decoration">Announcements</h3>
+        <?php foreach ($announcements as $announcement) : ?>
+          <div class="container">
+            <h5 style="text-decoration: underline"><i class='fas fa-check-circle text-success'></i> <?php echo $announcement['title']?></h5>
+            <p><?php echo $announcement['description'] ?> <br>
+            <small><?php echo $announcement['date'] ?></small>
+            </p>
           </div>
-
-          <div class="col-lg-4 col-md-5 features-img">
-            <img src="img/product-features.png" alt="" class="wow fadeInLeft">
-          </div>
-
-          <div class="col-lg-8 col-md-7 ">
-
-            <div class="row">
-
-              <div class="col-lg-6 col-md-6 box wow fadeInRight">
-                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident clarida perendo.</p>
-              </div>
-              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
-                <div class="icon"><i class="ion-ios-flask-outline"></i></div>
-                <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata noble dynala mark.</p>
-              </div>
-              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s">
-                <div class="icon"><i class="ion-social-buffer-outline"></i></div>
-                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur teleca starter sinode park ledo.</p>
-              </div>
-              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
-                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum dinoun trade capsule.</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
+        <?php endforeach; ?>
       </div>
 
     </section><!-- #features -->
@@ -244,22 +253,6 @@
       Product Advanced Featuress Section
     ============================-->
     <section id="advanced-features">
-
-     <!-- <div class="features-row section-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <img class="advanced-feature-img-right wow fadeInRight" src="img/advanced-feature-1.jpg" alt="">
-              <div class="wow fadeInLeft">
-                <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
-                <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
     
       <div class="features-row section-bg">
         <div class="container">

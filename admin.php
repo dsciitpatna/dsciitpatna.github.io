@@ -250,6 +250,27 @@
     }
 
 
+    $addannouncementsuccess="";
+    $addannouncementfailure="";
+    if (isset($_POST['addannouncement'])) {
+        $title= mysqli_real_escape_string($mysqli, $_POST['title']);
+        $description= mysqli_real_escape_string($mysqli, $_POST['description']);
+        // create sql
+        $sql = "INSERT INTO announcements(title,description) VALUES('$title','$description')";
+
+        // save to db and check
+        if(mysqli_query($mysqli, $sql)){
+            $addannouncementsuccess="Announcement added";
+        } else {
+            $addannouncementfailure="Error";
+        }
+    }
+    if (isset($_POST['deleteannouncement'])) {
+        $id= mysqli_real_escape_string($mysqli, $_POST['id']);
+        $sql = "DELETE FROM announcements WHERE id = '" . $id . "'";
+        $ret = $mysqli->query($sql);
+    }
+
 
 
     // Getting projects data
@@ -269,6 +290,10 @@
     $query = 'SELECT * FROM projectIdeas ORDER BY date DESC';
     $ress = mysqli_query($mysqli, $query);
     $projectIdeas = mysqli_fetch_all($ress, MYSQLI_ASSOC);
+
+    $query = 'SELECT * FROM announcements ORDER BY date DESC';
+    $ress = mysqli_query($mysqli, $query);
+    $announcements = mysqli_fetch_all($ress, MYSQLI_ASSOC);
 
     mysqli_free_result($ress);
     mysqli_close($mysqli);
@@ -328,6 +353,7 @@
                     <button data-target="#three">Projects</button>
                     <button data-target="#four">Budding Projects</button>
                     <button data-target="#five">Project Ideas</button>
+                    <button data-target="#six">Announcements</button>
                 </div>
                 <div class="container">
                     <form action="" method="POST" style="float: right">
@@ -454,7 +480,7 @@
                         </div>
                         <br><br>
 
-                        <!-- Display all budding projects -->
+                        <!-- Display all events -->
                         <div class="container">
                             <table class="table table-bordered">
                                 <thead>
@@ -660,7 +686,7 @@
                 <div class="panel" id="five">
                     <br><br>
                     <div class="container-fluid">  
-                        <!-- Display all projects -->
+                        <!-- Display all project ideas -->
                         <div class="container">
                             <h5 class="text-success"><?php echo $deleteprojectideasuccess?></h5>
                             <h5 class="text-danger"><?php echo $deleteprojectideafailure?></h5>
@@ -690,6 +716,60 @@
                                                 <input type="hidden" name="id" value="<?php echo $projectIdea['id']?>"/>
                                                 <button type="submit" name="deleteprojectidea" class="btn btn-primary">Delete</button>
                                             </form>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+
+                <!-- Id=6 -->
+                <div class="panel" id="six">
+                    <br><br>
+                    <div class="container-fluid">  
+                        <h2 class="text-center">Add Announcement</h2>
+                        <div class="container" style="max-width: 600px;">
+                            <form class="shadow" action="" method="POST" style="padding : 50px">
+                                <div class="form-group">
+                                    <label for="name">Title</label>
+                                    <input type="text" class="form-control" name="title" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <input type="text" class="form-control" name="description" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="addannouncement" class="btn btn-primary" />
+                                </div>
+                                <h5 class="text-success"><?php echo $addannouncementsuccess?></h5>
+                                <h5 class="text-danger"><?php echo $addannouncementfailure?></h5>
+                            </form>
+                        </div>
+                        <br><br>
+
+                        <!-- Display all announcements -->
+                        <div class="container">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($announcements as $announcement) : ?>
+                                        <tr>
+                                            <th scope="row"><?php echo $announcement['title'] ?></th>
+                                            <td><?php echo $announcement['date'] ?></td>
+                                            <td>
+                                                <form action="" method="POST">
+                                                    <input type="hidden" name="id" value="<?php echo $announcement['id']?>"/>
+                                                    <button type="submit" name="deleteannouncement" class="btn btn-primary">Delete</button>
+                                                </form>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>

@@ -1,30 +1,16 @@
 <?php
-require('config/db.php');
-session_start();
+  require('config/db.php');
+  session_start();
 
-// Create Query
-$query = 'SELECT * FROM projects ORDER BY created_date DESC';
+  $query = 'SELECT * FROM projects ORDER BY created_date DESC';
+  $result = mysqli_query($mysqli, $query);
+  $projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
+  $query = 'SELECT * FROM buddingProjects ORDER BY created_date DESC';
+  $result = mysqli_query($mysqli, $query);
+  $buddingProjects = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-// Get Result
-$result = mysqli_query($mysqli, $query);
-
-// Fetch Data
-$projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-// Create Query
-$query = 'SELECT * FROM buddingProjects ORDER BY created_date DESC';
-
-// Get Result
-$result = mysqli_query($mysqli, $query);
-
-// Fetch Data
-$buddingProjects = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-// Free Result
-mysqli_free_result($result);
-
-// Close Connection
-mysqli_close($mysqli);
+  mysqli_free_result($result);
+  mysqli_close($mysqli);
 
 ?>
 
