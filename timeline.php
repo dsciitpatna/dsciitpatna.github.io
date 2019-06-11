@@ -230,7 +230,7 @@ mysqli_close($mysqli);
          <br>
         <strong>Indian Institute of Technology, Patna</strong>
         <br>
-         <a href="#" class="btn-get-started scrollto" >Submit A Project Idea</a>  
+         <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a>  
          </div>
          <br><br>
       </div>

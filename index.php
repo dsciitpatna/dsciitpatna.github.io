@@ -109,7 +109,7 @@
       <h2>DSC IIT Patna</h2>
       <p>Creating Impact For a Better Tomorrow Some Random Text To Fill.</p>  
       <a href="./projects.php" class="btn-get-started scrollto">View Projects</a> 
-      <a href="#" class="btn-get-started scrollto" >Submit A Project Idea</a> 
+      <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a> 
     </div>
 
   </section><!-- #intro -->
@@ -482,14 +482,14 @@
           <br>
           <br>
         </div>
-        
         <div class="col-lg-3 col-md-3 col-sm-3">
          <strong>Copyright ©</strong> 
+        <br>
+        <strong>Developer Student Club</strong>
          <br>
-         <strong>Developer Student Club</strong>
-         <br>
-         <strong>Indian Institute of Technology, Patna</strong>
-         <br>         
+        <strong>Indian Institute of Technology, Patna</strong>
+        <br>
+         <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a>  
          </div>
          <br><br>
       </div>

@@ -776,7 +776,11 @@
         <div class="col-lg-3 col-md-3 col-sm-3">
          <strong>Copyright ©</strong> 
         <br>
+        <strong>Developer Student Club</strong>
+         <br>
         <strong>Indian Institute of Technology, Patna</strong>
+        <br>
+         <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a>  
          </div>
          <br><br>
       </div>

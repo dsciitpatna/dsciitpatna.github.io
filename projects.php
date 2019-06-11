@@ -204,6 +204,13 @@ mysqli_close($mysqli);
                   <div class="gallery-info">
                     <h4><?php echo $project['title'] ?></h4>
                     <p><?php echo $project['description'] ?></p>
+                    <span>Status: 
+                      <?php  if($project['status']) { ?>
+                        <span class="badge badge-success">Completed</span>
+                      <?php } else { ?>
+                        <span class="badge badge-warning">Ongoing</span>
+                      <?php } ?>
+                      </span>
                   </div>
                 </div>
               </div>
@@ -217,7 +224,7 @@ mysqli_close($mysqli);
       <!--==========================
       Budding Projects Section
     ============================-->
-    <section id="gallery" class="section-bg">
+    <section id="gallery" class="section-bg" style="padding: 0 0 50px">
         <div class="container">
           <header class="section-header">
             <h3 class="section-title">Budding Projects</h3>
@@ -317,8 +324,10 @@ mysqli_close($mysqli);
          <strong>Copyright ©</strong> 
         <br>
         <strong>Developer Student Club</strong>
-        <br>
+         <br>
         <strong>Indian Institute of Technology, Patna</strong>
+        <br>
+         <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a>  
          </div>
          <br><br>
       </div>
