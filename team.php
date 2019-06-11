@@ -766,9 +766,9 @@
         <div class="col-lg-3 col-md-3 col-sm-3">
          <strong>Back To:</strong>
          <br><br>
-         <a href="#intro" class="scrollto">Home</a>
+         <a href="./" class="scrollto">Home</a>
          <br>
-         <a href="#about" class="scrollto">About</a>
+         <a href="./projects.php" class="scrollto">Projects</a>
          <br>
           <br>
           <br>
