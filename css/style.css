@@ -94,6 +94,7 @@ h6 {
 
 #header #logo h1 {
   font-size: 36px;
+  width: 200px;
   margin: -4px 0 0 0;
   padding: 0;
   line-height: 1;

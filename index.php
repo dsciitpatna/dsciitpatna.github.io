@@ -132,8 +132,7 @@
   <header id="header">
     <div class="container">
       <div id="logo" class="pull-left">                  
-          <h1><a href="./"><img src="img/logo.png" alt="" title="" width="30%" id='logoimg'></a></h1>
-           
+          <h1><a href="./"><img src="img/logo.png" alt="" title="" width="70%" id='logoimg'></a></h1>           
       </div>
 
       <nav id="nav-menu-container">
@@ -146,6 +145,7 @@
           <li><a href="./projects.php">Projects</a></li>
           <li><a href="./leaderboard.php">Leaderboard</a></li>
           <li><a href="./timeline.php">Timeline</a></li>
+          <li><a href="./hackathon.php">Hackathon</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -159,12 +159,7 @@
       <h2>DSC IIT Patna</h2>
       <p>Creating Impact For a Better Tomorrow Some Random Text To Fill.</p>  
       <a href="./projects.php" class="btn-get-started scrollto">View Projects</a> 
-<<<<<<< HEAD
-      <a href="#" class="btn-get-started scrollto" >Submit A Project Idea</a> 
-      
-=======
       <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a> 
->>>>>>> ab070564d4faf03d7d3f19f8d275507a575ff319
     </div>
 
   </section><!-- #intro -->
