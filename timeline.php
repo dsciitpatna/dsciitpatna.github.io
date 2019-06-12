@@ -216,9 +216,9 @@ mysqli_close($mysqli);
         <div class="col-lg-3 col-md-3 col-sm-3">
          <strong>Back To:</strong>
          <br><br>
-         <a href="#intro" class="scrollto">Home</a>
+         <a href="./" class="scrollto">Home</a>
          <br>
-         <a href="#about" class="scrollto">About</a>
+         <a href="./projects.php" class="scrollto">Projects</a>
          <br>
           <br>
           <br>
@@ -230,7 +230,7 @@ mysqli_close($mysqli);
          <br>
         <strong>Indian Institute of Technology, Patna</strong>
         <br>
-         <a href="#" class="btn-get-started scrollto" >Submit A Project Idea</a>  
+         <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a>  
          </div>
          <br><br>
       </div>

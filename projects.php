@@ -1,30 +1,16 @@
 <?php
-require('config/db.php');
-session_start();
+  require('config/db.php');
+  session_start();
 
-// Create Query
-$query = 'SELECT * FROM projects ORDER BY created_date DESC';
+  $query = 'SELECT * FROM projects ORDER BY created_date DESC';
+  $result = mysqli_query($mysqli, $query);
+  $projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
+  $query = 'SELECT * FROM buddingProjects ORDER BY created_date DESC';
+  $result = mysqli_query($mysqli, $query);
+  $buddingProjects = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-// Get Result
-$result = mysqli_query($mysqli, $query);
-
-// Fetch Data
-$projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-// Create Query
-$query = 'SELECT * FROM buddingProjects ORDER BY created_date DESC';
-
-// Get Result
-$result = mysqli_query($mysqli, $query);
-
-// Fetch Data
-$buddingProjects = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-// Free Result
-mysqli_free_result($result);
-
-// Close Connection
-mysqli_close($mysqli);
+  mysqli_free_result($result);
+  mysqli_close($mysqli);
 
 ?>
 
@@ -204,6 +190,13 @@ mysqli_close($mysqli);
                   <div class="gallery-info">
                     <h4><?php echo $project['title'] ?></h4>
                     <p><?php echo $project['description'] ?></p>
+                    <span>Status: 
+                      <?php  if($project['status']) { ?>
+                        <span class="badge badge-success">Completed</span>
+                      <?php } else { ?>
+                        <span class="badge badge-warning">Ongoing</span>
+                      <?php } ?>
+                      </span>
                   </div>
                 </div>
               </div>
@@ -217,7 +210,7 @@ mysqli_close($mysqli);
       <!--==========================
       Budding Projects Section
     ============================-->
-    <section id="gallery" class="section-bg">
+    <section id="gallery" class="section-bg" style="padding: 0 0 50px">
         <div class="container">
           <header class="section-header">
             <h3 class="section-title">Budding Projects</h3>
@@ -306,9 +299,9 @@ mysqli_close($mysqli);
         <div class="col-lg-3 col-md-3 col-sm-3">
          <strong>Back To:</strong>
          <br><br>
-         <a href="#intro" class="scrollto">Home</a>
+         <a href="./" class="scrollto">Home</a>
          <br>
-         <a href="#about" class="scrollto">About</a>
+         <a href="./timeline.php" class="scrollto">Timeline</a>
          <br>
           <br>
           <br>
@@ -317,8 +310,10 @@ mysqli_close($mysqli);
          <strong>Copyright ©</strong> 
         <br>
         <strong>Developer Student Club</strong>
-        <br>
+         <br>
         <strong>Indian Institute of Technology, Patna</strong>
+        <br>
+         <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a>  
          </div>
          <br><br>
       </div>

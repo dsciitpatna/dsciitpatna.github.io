@@ -119,14 +119,14 @@
     $deleteeventsuccess="";
     $deleteeventfailure="";
     if (isset($_POST['deleteevent'])) {
-        $title= mysqli_real_escape_string($mysqli, $_POST['title']);
-        $sql = "SELECT * FROM timeline WHERE title = '" . $title . "'";
+        $id= mysqli_real_escape_string($mysqli, $_POST['id']);
+        $sql = "SELECT * FROM timeline WHERE id = '" . $id . "'";
         $res = $mysqli->query($sql);
         $res = mysqli_fetch_assoc($res);
         if(!$res) {
             $deleteeventfailure="No data";
         } else {
-            $sql = "DELETE FROM timeline WHERE title = '" . $title . "'";
+            $sql = "DELETE FROM timeline WHERE id = '" . $id . "'";
             $ret = $mysqli->query($sql);
             if(!$ret) {
                 $deleteeventfailure="Error";
@@ -145,6 +145,7 @@
         $description= mysqli_real_escape_string($mysqli, $_POST['description']);
         $filter= mysqli_real_escape_string($mysqli, $_POST['filter']);
         $github_link= mysqli_real_escape_string($mysqli, $_POST['github_link']);
+        $status= mysqli_real_escape_string($mysqli, $_POST['status']);
         $sql = "SELECT * FROM projects WHERE title = '" . $title . "'";
         $res = $mysqli->query($sql);
         $res = mysqli_fetch_assoc($res);
@@ -152,7 +153,7 @@
             $addprojectfailure="Project already exists";
         } else {
             // create sql
-            $sql = "INSERT INTO projects(title,description,filter,github_link) VALUES('$title','$description','$filter','$github_link')";
+            $sql = "INSERT INTO projects(title,description,filter,github_link, status) VALUES('$title','$description','$filter','$github_link', '$status')";
 
             // save to db and check
             if(mysqli_query($mysqli, $sql)){
@@ -165,14 +166,14 @@
     $deleteprojectsuccess="";
     $deleteprojectfailure="";
     if (isset($_POST['deleteproject'])) {
-        $title= mysqli_real_escape_string($mysqli, $_POST['title']);
-        $sql = "SELECT * FROM projects WHERE title = '" . $title . "'";
+        $id= mysqli_real_escape_string($mysqli, $_POST['id']);
+        $sql = "SELECT * FROM projects WHERE id = '" . $id . "'";
         $res = $mysqli->query($sql);
         $res = mysqli_fetch_assoc($res);
         if(!$res) {
             $deleteprojectfailure="No data";
         } else {
-            $sql = "DELETE FROM projects WHERE title = '" . $title . "'";
+            $sql = "DELETE FROM projects WHERE id = '" . $id . "'";
             $ret = $mysqli->query($sql);
             if(!$ret) {
                 $deleteprojectfailure="Error";
@@ -181,6 +182,12 @@
             }
         }
         
+    }
+    if (isset($_POST['updateproject'])) {
+        $id= mysqli_real_escape_string($mysqli, $_POST['id']);
+        $status= mysqli_real_escape_string($mysqli, $_POST['status']);
+        $sql = "UPDATE projects SET status = '" . $status . "' WHERE id = '" . $id . "'";
+        $ret = $mysqli->query($sql);        
     }
 
 
@@ -210,23 +217,86 @@
     $deletebuddingprojectsuccess="";
     $deletebuddingprojectfailure="";
     if (isset($_POST['deletebuddingproject'])) {
-        $title= mysqli_real_escape_string($mysqli, $_POST['title']);
-        $sql = "SELECT * FROM buddingProjects WHERE title = '" . $title . "'";
+        $id= mysqli_real_escape_string($mysqli, $_POST['id']);
+        $sql = "SELECT * FROM buddingProjects WHERE id = '" . $id . "'";
         $res = $mysqli->query($sql);
         $res = mysqli_fetch_assoc($res);
         if(!$res) {
             $deletebuddingprojectfailure="No data";
         } else {
-            $sql = "DELETE FROM buddingProjects WHERE title = '" . $title . "'";
+            $sql = "DELETE FROM buddingProjects WHERE id = '" . $id . "'";
             $ret = $mysqli->query($sql);
             if(!$ret) {
-                $deleteprojectfailure="Error";
+                $deletebuddingprojectfailure="Error";
             } else {
-                $deleteprojectsuccess="Deleted budding project record";
+                $deletebuddingprojectsuccess="Deleted budding project record";
             }
         }
         
     }
+
+
+    $deleteprojectideasuccess="";
+    $deleteprojectideafailure="";
+    if (isset($_POST['deleteprojectidea'])) {
+        $id= mysqli_real_escape_string($mysqli, $_POST['id']);
+        $sql = "DELETE FROM projectIdeas WHERE id = '" . $id . "'";
+        $ret = $mysqli->query($sql);
+        if(!$ret) {
+            $deleteprojectideafailure="Error";
+        } else {
+            $deleteprojectideasuccess="Deleted project idea";
+        }        
+    }
+
+
+    $addannouncementsuccess="";
+    $addannouncementfailure="";
+    if (isset($_POST['addannouncement'])) {
+        $title= mysqli_real_escape_string($mysqli, $_POST['title']);
+        $description= mysqli_real_escape_string($mysqli, $_POST['description']);
+        // create sql
+        $sql = "INSERT INTO announcements(title,description) VALUES('$title','$description')";
+
+        // save to db and check
+        if(mysqli_query($mysqli, $sql)){
+            $addannouncementsuccess="Announcement added";
+        } else {
+            $addannouncementfailure="Error";
+        }
+    }
+    if (isset($_POST['deleteannouncement'])) {
+        $id= mysqli_real_escape_string($mysqli, $_POST['id']);
+        $sql = "DELETE FROM announcements WHERE id = '" . $id . "'";
+        $ret = $mysqli->query($sql);
+    }
+
+
+
+    // Getting projects data
+
+    $query = 'SELECT * FROM projects ORDER BY created_date DESC';
+    $ress = mysqli_query($mysqli, $query);
+    $projects = mysqli_fetch_all($ress, MYSQLI_ASSOC);
+
+    $query = 'SELECT * FROM buddingProjects ORDER BY created_date DESC';
+    $ress = mysqli_query($mysqli, $query);
+    $buddingProjects = mysqli_fetch_all($ress, MYSQLI_ASSOC);
+
+    $query = 'SELECT * FROM timeline ORDER BY date DESC';
+    $ress = mysqli_query($mysqli, $query);
+    $events = mysqli_fetch_all($ress, MYSQLI_ASSOC);
+
+    $query = 'SELECT * FROM projectIdeas ORDER BY date DESC';
+    $ress = mysqli_query($mysqli, $query);
+    $projectIdeas = mysqli_fetch_all($ress, MYSQLI_ASSOC);
+
+    $query = 'SELECT * FROM announcements ORDER BY date DESC';
+    $ress = mysqli_query($mysqli, $query);
+    $announcements = mysqli_fetch_all($ress, MYSQLI_ASSOC);
+
+    mysqli_free_result($ress);
+    mysqli_close($mysqli);
 
 ?>
 
@@ -282,6 +352,8 @@
                     <button data-target="#two">Timeline</button>
                     <button data-target="#three">Projects</button>
                     <button data-target="#four">Budding Projects</button>
+                    <button data-target="#five">Project Ideas</button>
+                    <button data-target="#six">Announcements</button>
                 </div>
                 <div class="container">
                     <form action="" method="POST" style="float: right">
@@ -381,34 +453,6 @@
                     <div class="container-fluid">  
 
                         <h2 class="text-center">Add Event</h2>
-                            <div class="container" style="max-width: 600px;">
-                                <form class="shadow" action="" method="POST" style="padding : 50px">
-                                    <div class="form-group">
-                                        <label for="name">Title</label>
-                                        <input type="text" class="form-control" name="title" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="rollno">Short Description</label>
-                                        <input type="text" class="form-control" name="short_desc" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="points">Long Description</label>
-                                        <input type="text" class="form-control" name="long_desc" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="points">Date (YYYY-MM-DD)</label>
-                                        <input type="date" class="form-control" name="date" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" name="addevent" class="btn btn-primary" />
-                                    </div>
-                                    <h5 class="text-success"><?php echo $addeventsuccess?></h5>
-                                    <h5 class="text-danger"><?php echo $addeventfailure?></h5>
-                                </form>
-                            </div>
-                        <br><br>
-                        
-                        <h2 class="text-center">Delete event</h2>
                         <div class="container" style="max-width: 600px;">
                             <form class="shadow" action="" method="POST" style="padding : 50px">
                                 <div class="form-group">
@@ -416,11 +460,53 @@
                                     <input type="text" class="form-control" name="title" required />
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" name="deleteevent" class="btn btn-primary" />
+                                    <label for="rollno">Short Description</label>
+                                    <input type="text" class="form-control" name="short_desc" required />
                                 </div>
-                                <h5 class="text-success"><?php echo $deleteeventsuccess?></h5>
-                                <h5 class="text-danger"><?php echo $deleteeventfailure?></h5>
+                                <div class="form-group">
+                                    <label for="points">Long Description</label>
+                                    <input type="text" class="form-control" name="long_desc" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="points">Date (YYYY-MM-DD)</label>
+                                    <input type="date" class="form-control" name="date" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="addevent" class="btn btn-primary" />
+                                </div>
+                                <h5 class="text-success"><?php echo $addeventsuccess?></h5>
+                                <h5 class="text-danger"><?php echo $addeventfailure?></h5>
                             </form>
+                        </div>
+                        <br><br>
+
+                        <!-- Display all events -->
+                        <div class="container">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($events as $event) : ?>
+                                        <tr>
+                                            <th scope="row"><?php echo $event['id'] ?></th>
+                                            <td><?php echo $event['title'] ?></td>
+                                            <td><?php echo $event['date'] ?></td>
+                                            <td>
+                                                <form action="" method="POST">
+                                                    <input type="hidden" name="id" value="<?php echo $event['id']?>"/>
+                                                    <button type="submit" name="deleteevent" class="btn btn-primary">Delete</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
                         </div>
                         <br><br>
                     </div>
@@ -432,41 +518,6 @@
                     <div class="container-fluid">  
 
                         <h2 class="text-center">Add Project</h2>
-                            <div class="container" style="max-width: 600px;">
-                                <form class="shadow" action="" method="POST" style="padding : 50px">
-                                    <div class="form-group">
-                                        <label for="name">Title</label>
-                                        <input type="text" class="form-control" name="title" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="filter">Filter</label>
-                                        <select class="browser-default custom-select" name="filter">
-                                            <option selected value="web">Web</option>
-                                            <option value="app">App</option>
-                                            <option value="ml">ML</option>
-                                            <option value="block">Blockchain & Cryptocurrency</option>
-                                            <option value="iot">IOT</option>
-                                            <option value="cloud">Cloud</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="description">Short Description</label>
-                                        <input type="text" class="form-control" name="description" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="github_link">Github Link</label>
-                                        <input type="text" class="form-control" name="github_link" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" name="addproject" class="btn btn-primary" />
-                                    </div>
-                                    <h5 class="text-success"><?php echo $addprojectsuccess?></h5>
-                                    <h5 class="text-danger"><?php echo $addprojectfailure?></h5>
-                                </form>
-                            </div>
-                        <br><br>
-                        
-                        <h2 class="text-center">Delete Project</h2>
                         <div class="container" style="max-width: 600px;">
                             <form class="shadow" action="" method="POST" style="padding : 50px">
                                 <div class="form-group">
@@ -474,11 +525,91 @@
                                     <input type="text" class="form-control" name="title" required />
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" name="deleteproject" class="btn btn-primary" />
+                                    <label for="filter">Filter</label>
+                                    <select class="browser-default custom-select" name="filter">
+                                        <option selected value="web">Web</option>
+                                        <option value="app">App</option>
+                                        <option value="ml">ML</option>
+                                        <option value="block">Blockchain & Cryptocurrency</option>
+                                        <option value="iot">IOT</option>
+                                        <option value="cloud">Cloud</option>
+                                    </select>
                                 </div>
-                                <h5 class="text-success"><?php echo $deleteprojectsuccess?></h5>
-                                <h5 class="text-danger"><?php echo $deleteprojectfailure?></h5>
+                                <div class="form-group">
+                                    <label for="description">Short Description</label>
+                                    <input type="text" class="form-control" name="description" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="github_link">Github Link</label>
+                                    <input type="text" class="form-control" name="github_link" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="filter">Status (Ongoing or Completed)</label>
+                                    <select class="browser-default custom-select" name="status">
+                                        <option selected value=0>Ongoing</option>
+                                        <option value=1>Completed</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="addproject" class="btn btn-primary" />
+                                </div>
+                                <h5 class="text-success"><?php echo $addprojectsuccess?></h5>
+                                <h5 class="text-danger"><?php echo $addprojectfailure?></h5>
                             </form>
+                        </div>
+                        <br><br>
+
+                        <!-- Display all projects -->
+                        <div class="container">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Filter</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Update Status</th>
+                                    <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($projects as $project) : ?>
+                                        <tr>
+                                            <th scope="row"><?php echo $project['id'] ?></th>
+                                            <td><?php echo $project['title'] ?></td>
+                                            <td><?php echo $project['filter'] ?></td>
+                                            <td>
+                                                <?php if($project['status']) { ?>
+                                                    <span class="text-success">Completed</span>
+                                                <?php } else { ?>
+                                                    <span class="text-danger">Ongoing</span>
+                                                <?php } ?>
+                                            </td>
+                                            <td>
+                                                <form action="" method="POST">
+                                                    <input type="hidden" name="id" value="<?php echo $project['id']?>"/>
+                                                    <div class="form-group">
+                                                        <label for="filter">Status (Ongoing or Completed)</label>
+                                                        <select class="browser-default custom-select" name="status">
+                                                            <option selected value=0>Ongoing</option>
+                                                            <option value=1>Completed</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="submit" name="updateproject" class="btn btn-primary" />
+                                                    </div>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <form action="" method="POST">
+                                                    <input type="hidden" name="id" value="<?php echo $project['id']?>"/>
+                                                    <button type="submit" name="deleteproject" class="btn btn-primary">Delete</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
                         </div>
                         <br><br>
                     </div>
@@ -489,37 +620,6 @@
                     <div class="container-fluid">  
 
                         <h2 class="text-center">Add Budding Project</h2>
-                            <div class="container" style="max-width: 600px;">
-                                <form class="shadow" action="" method="POST" style="padding : 50px">
-                                    <div class="form-group">
-                                        <label for="name">Title</label>
-                                        <input type="text" class="form-control" name="title" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="filter">Filter</label>
-                                        <select class="browser-default custom-select" name="filter">
-                                            <option selected value="web">Web</option>
-                                            <option value="app">App</option>
-                                            <option value="ml">ML</option>
-                                            <option value="block">Blockchain & Cryptocurrency</option>
-                                            <option value="iot">IOT</option>
-                                            <option value="cloud">Cloud</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="description">Short Description</label>
-                                        <input type="text" class="form-control" name="description" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" name="addbuddingproject" class="btn btn-primary" />
-                                    </div>
-                                    <h5 class="text-success"><?php echo $addbuddingprojectsuccess?></h5>
-                                    <h5 class="text-danger"><?php echo $addbuddingprojectfailure?></h5>
-                                </form>
-                            </div>
-                        <br><br>
-                        
-                        <h2 class="text-center">Delete Budding Project</h2>
                         <div class="container" style="max-width: 600px;">
                             <form class="shadow" action="" method="POST" style="padding : 50px">
                                 <div class="form-group">
@@ -527,11 +627,154 @@
                                     <input type="text" class="form-control" name="title" required />
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" name="deletebuddingproject" class="btn btn-primary" />
+                                    <label for="filter">Filter</label>
+                                    <select class="browser-default custom-select" name="filter">
+                                        <option selected value="web">Web</option>
+                                        <option value="app">App</option>
+                                        <option value="ml">ML</option>
+                                        <option value="block">Blockchain & Cryptocurrency</option>
+                                        <option value="iot">IOT</option>
+                                        <option value="cloud">Cloud</option>
+                                    </select>
                                 </div>
-                                <h5 class="text-success"><?php echo $deletebuddingprojectsuccess?></h5>
-                                <h5 class="text-danger"><?php echo $deletebuddingprojectfailure?></h5>
+                                <div class="form-group">
+                                    <label for="description">Short Description</label>
+                                    <input type="text" class="form-control" name="description" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="addbuddingproject" class="btn btn-primary" />
+                                </div>
+                                <h5 class="text-success"><?php echo $addbuddingprojectsuccess?></h5>
+                                <h5 class="text-danger"><?php echo $addbuddingprojectfailure?></h5>
                             </form>
+                        </div>
+                        <br><br>
+
+                        <!-- Display all budding projects -->
+                        <div class="container">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Filter</th>
+                                    <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($buddingProjects as $buddingProject) : ?>
+                                        <tr>
+                                            <th scope="row"><?php echo $buddingProject['id'] ?></th>
+                                            <td><?php echo $buddingProject['title'] ?></td>
+                                            <td><?php echo $buddingProject['filter'] ?></td>
+                                            <td>
+                                                <form action="" method="POST">
+                                                    <input type="hidden" name="id" value="<?php echo $buddingProject['id']?>"/>
+                                                    <button type="submit" name="deletebuddingproject" class="btn btn-primary">Delete</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+
+                <!-- Id=5 -->
+                <div class="panel" id="five">
+                    <br><br>
+                    <div class="container-fluid">  
+                        <!-- Display all project ideas -->
+                        <div class="container">
+                            <h5 class="text-success"><?php echo $deleteprojectideasuccess?></h5>
+                            <h5 class="text-danger"><?php echo $deleteprojectideafailure?></h5>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Organization</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Delete Idea</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($projectIdeas as $projectIdea) : ?>
+                                        <tr>
+                                            <th scope="row"><?php echo $projectIdea['name'] ?></th>
+                                            <th scope="row">
+                                                <a href="mailto:<?php echo $projectIdea['email'] ?>">
+                                                <?php echo $projectIdea['email'] ?>
+                                                </a>
+                                            </th>
+                                            <td><?php echo $projectIdea['organization'] ?></td>
+                                            <td><?php echo $projectIdea['title'] ?></td>
+                                            <td>
+                                            <form action="" method="POST">
+                                                <input type="hidden" name="id" value="<?php echo $projectIdea['id']?>"/>
+                                                <button type="submit" name="deleteprojectidea" class="btn btn-primary">Delete</button>
+                                            </form>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+
+                <!-- Id=6 -->
+                <div class="panel" id="six">
+                    <br><br>
+                    <div class="container-fluid">  
+                        <h2 class="text-center">Add Announcement</h2>
+                        <div class="container" style="max-width: 600px;">
+                            <form class="shadow" action="" method="POST" style="padding : 50px">
+                                <div class="form-group">
+                                    <label for="name">Title</label>
+                                    <input type="text" class="form-control" name="title" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <input type="text" class="form-control" name="description" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="addannouncement" class="btn btn-primary" />
+                                </div>
+                                <h5 class="text-success"><?php echo $addannouncementsuccess?></h5>
+                                <h5 class="text-danger"><?php echo $addannouncementfailure?></h5>
+                            </form>
+                        </div>
+                        <br><br>
+
+                        <!-- Display all announcements -->
+                        <div class="container">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($announcements as $announcement) : ?>
+                                        <tr>
+                                            <th scope="row"><?php echo $announcement['title'] ?></th>
+                                            <td><?php echo $announcement['date'] ?></td>
+                                            <td>
+                                                <form action="" method="POST">
+                                                    <input type="hidden" name="id" value="<?php echo $announcement['id']?>"/>
+                                                    <button type="submit" name="deleteannouncement" class="btn btn-primary">Delete</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
                         </div>
                         <br><br>
                     </div>

@@ -81,7 +81,7 @@
 
 #gallery .gallery-item {
     position: relative;
-    height: 360px;
+    height: 400px; /* used */
     overflow: hidden;
     padding:10px;
 }
@@ -138,7 +138,7 @@
     background: #fff;
     text-align: center;
     padding: 30px;
-    height: 90px;
+    height: 150px; /* used */
     border-radius: 0 0 3px 3px;
 }
 
