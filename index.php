@@ -110,6 +110,7 @@
       <p>Creating Impact For a Better Tomorrow Some Random Text To Fill.</p>  
       <a href="./projects.php" class="btn-get-started scrollto">View Projects</a> 
       <a href="#" class="btn-get-started scrollto" >Submit A Project Idea</a> 
+      
     </div>
 
   </section><!-- #intro -->
@@ -382,7 +383,7 @@
     ============================-->
     <section id="contact">
       <div class="container">
-        <div class="row wow fadeInUp d-flex justify-content-center">
+        <div class="fadeInUp d-flex centre">
         <div class="col-lg-4 col-md-4">
             <div class="desktop">
                <img  src="img/indiarot.png" style="width:6em;height:13em; float:right;" >
@@ -433,6 +434,19 @@
     </section><!-- #contact -->
 
 
+<!--==========================
+    hackathon
+  ============================-->
+    <section id="hackathon">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2>Hack O'Latte</h2>        
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit eum libero necessitatibus, ipsa fuga facilis modi magni, quam reprehenderit ducimus nulla similique ipsam debitis consectetur inventore aut, possimus magnam? Veritatis, rem fuga a aperiam deserunt obcaecati nobis neque, amet porro blanditiis earum hic qui quo. Error iure, incidunt hic ex similique tempora ullam eligendi dolore id et enim, facere dignissimos expedita voluptas omnis repudiandae ipsa sunt eos ea animi distinctio exercitationem. Exercitationem quasi, cumque laudantium odit reprehenderit perspiciatis nulla voluptatem doloribus dolore soluta delectus quaerat recusandae, obcaecati, a vitae inventore tenetur sint aut facilis nihil hic nesciunt! Libero, minima.</p>
+          <a href="./hackathon.php" class="btn scrollto">Click here</a>
+        </div>
+      </div>
+      
+    </section>
   </main>
 
   <!--==========================
