@@ -93,16 +93,20 @@ h6 {
 }
 
 #header #logo h1 {
-  font-size: 36px;
-  width: 200px;
-  margin: -4px 0 0 0;
+  /* font-size: 36px; */
+  width: 13vw;
+  margin: -0.28vw 0 0 0;
   padding: 0;
   line-height: 1;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  letter-spacing: 3px;
+  /* letter-spacing: 0vw; */
   text-transform: uppercase;
+}
+
+#header li {
+  font-size: 1.3vw;
 }
 
 #header #logo h1 a,

@@ -157,7 +157,7 @@
   <section id="intro">
     <div class="intro-text">
       <h2>DSC IIT Patna</h2>
-      <p>Creating Impact For a Better Tomorrow Some Random Text To Fill.</p>  
+      <p>Empowering student developers to create impact for a better tomorrow</p>  
       <a href="./projects.php" class="btn-get-started scrollto">View Projects</a> 
       <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a> 
     </div>
