@@ -1,0 +1,66 @@
+body {
+  padding-top: 100px;
+}
+
+#info {
+  font-size: 20px;
+}
+
+.writeup {
+  text-align: center;
+  color: white;
+  background-color: rgb(72, 74, 196);
+  padding: 0 100px;
+  width: 50%;
+  height: 100vh;
+  float: left;
+}
+
+.writeup h1 {
+  padding-top: 45px;
+  color: black;
+}
+
+.writeup .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid black;
+  color: black;
+  display: inline-block;
+}
+
+.writeup .btn-get-started:hover {
+  color: #1dc8cd;
+  background: black;
+}
+
+#info .about {
+  background-color: rgb(233, 100, 12);
+  color: black;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  padding: 180px 50px;
+  justify-content: center;
+}
+
+.about .fa {
+  font-size: 40px;
+  padding: 0 10px 20px 0;
+}
+
+.about span {
+  font-size: 30px;
+}
+
+.about .content {
+  padding-right: 5px;
+  text-align: center;
+}

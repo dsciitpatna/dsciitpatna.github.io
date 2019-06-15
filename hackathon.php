@@ -21,6 +21,8 @@
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
   <link href="css/style.css?version=51" rel="stylesheet">
+  <!-- Hackathon CSS File -->
+  <link href="css/hackathon.css" rel="stylesheet">
 </head>
 
 <body>
@@ -48,6 +50,107 @@
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
+
+  <section id="info">
+    <div class='writeup' >
+      <h1>Hack O'Latte</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore culpa optio est sunt illo cupiditate voluptate incidunt eveniet exercitationem. Aut quo reprehenderit nisi soluta, ut modi error optio porro assumenda, eaque deleniti. Facere blanditiis, voluptates modi sit possimus distinctio! Dolorum quae accusamus odio ullam minus molestias non in optio fuga, modi error soluta nulla quis facilis iure qui natus culpa corrupti tempora nam et voluptatibus sequi. Dolorum, in qui a culpa officia harum totam expedita quia dicta laudantium, quos labore, illo id pariatur consequatur quae doloremque atque. Perferendis quod debitis repellat commodi consequuntur rem ipsum? Nesciunt doloremque ullam optio eum?</p> 
+      <a href="#" class="btn-get-started scrollto" >Submit Proposal</a> 
+    </div>
+
+    <div class="about">
+      <div class="date content">
+        <div>
+          <span class="fa fa-calendar" aria-hidden="true"></span>
+          <span>Date: </span>
+          <span>15/04/1989</span>
+        </div>  
+      </div>
+      <div class='venue content' >
+        <span class="fa fa-map-marker" aria-hidden="true"></span>
+        <span>Venue: </span>
+        <span>Tiananmen Square</span>
+      </div>
+      <div class='duration content'>
+        <span class="fa fa-clock-o" aria-hidden="true"></span>
+        <span>Duration: </span>
+        <span>50 Days</span>
+      </div>
+      <div class='phone content'>
+        <span class="fa fa-phone" aria-hidden="true"></span>
+        <span>Phone: </span>
+        <span>+1111111111</span>
+      </div>
+      <div class='mail content'>
+        <span class="fa fa-envelope" aria-hidden="true"></span>
+        <span>Email: </span>
+        <span>xyz@gmail.com</span>
+      </div>
+    </div>
+  </section>
+  
+
+<!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+        
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <strong>Quick Links:</strong>
+          <br><br>
+          <a href="https://www.iitp.ac.in/">IIT Patna</a>
+          <br>
+          <a href="https://www.iitp.ac.in/hostel/reachIITP.html">Reach Us</a>
+          <br>
+          <br>
+          <br>
+          
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <strong>Social Links:</strong>
+          <br><br>
+          <a href="https://www.facebook.com/dsciitpatna/">
+          <i class="fa fa-facebook-square">
+          </i>
+          Developer Student Club
+          </a>
+          <br>
+          <a href="https://www.facebook.com/iitp.ac.in/">
+          <i class="fa fa-facebook-square">
+           </i>
+          IIT Patna
+          </a>
+          <br>
+          <br>
+          <br>
+          
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+         <strong>Back To:</strong>
+         <br><br>
+         <a href="./" class="scrollto">Home</a>
+         <br>
+         <a href="./projects.php" class="scrollto">Projects</a>
+         <br>
+          <br>
+          <br>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+         <strong>Copyright ©</strong> 
+        <br>
+        <strong>Developer Student Club</strong>
+         <br>
+        <strong>Indian Institute of Technology, Patna</strong>
+        <br>
+         <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a>  
+         </div>
+         <br><br>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
 
 
   <!-- JavaScript Libraries -->

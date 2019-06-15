@@ -376,14 +376,14 @@
     <section id="contact">
       <div class="container">
         <div class="fadeInUp d-flex centre">
-        <div class="col-lg-4 col-md-4">
+          <!-- <div class="col-lg-4 col-md-4"> -->
             <div class="desktop">
                <img  src="img/indiarot.png" style="width:6em;height:13em; float:right;" >
               </div>
               <div class="mobile">
               <img id="mobile" src="img/india (1).png" style="width:18em;height:7em;float:left;">
               </div>
-          </div>
+          <!-- </div> -->
          <div class="col-lg-4 col-md-4">
             <div class="contact-about">
               <h3>DSC IIT Patna</h3>

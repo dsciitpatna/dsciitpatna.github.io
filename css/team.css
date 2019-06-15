@@ -17,7 +17,7 @@ body {
 }
 
 .smoothSlideContainer {
-  background-color: white;
+  /* background-color: white; */
   position: absolute;
   height: 100%;
   width: 100%;
@@ -372,7 +372,7 @@ body {
 
 section.team-area {
   padding: 60px 0;
-  background: rgb(112, 198, 238);
+  /* background: rgb(112, 198, 238); */
 }
 a,
 a:hover,
