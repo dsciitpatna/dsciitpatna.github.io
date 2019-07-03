@@ -621,12 +621,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)),
     url(../img/call-to-action-bg.jpg) fixed center center;
   background-size: cover;
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 #call-to-action .cta-title {
   color: #fff;
-  font-size: 70px;
+  font-size: 90px;
   font-weight: 500;
 }
 
@@ -823,7 +823,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # hackathon
 --------------------------------------------------------------*/
-#hackathon {
+/*#hackathon {
   padding: 50px 0;
   overflow: hidden;
 }
@@ -846,7 +846,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #hackathon .btn:hover {
   color: #1dc8cd;
   background: black;
-}
+}*/
 
 /*--------------------------------------------------------------
 # Footer

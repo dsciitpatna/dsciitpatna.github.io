@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/teamBG.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../img/teamBG.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -392,6 +392,7 @@ ul {
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
+  color:rgb(247, 243, 243);
 }
 
 .site-heading h2 span {

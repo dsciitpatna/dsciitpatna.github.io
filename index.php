@@ -39,7 +39,7 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Main Stylesheet File -->
-  <link href="css/style.css?version=51" rel="stylesheet">
+  <link href="css/style.css?version=1" rel="stylesheet">
 
   <style>
     @media only screen and (max-width: 768px) {
@@ -207,19 +207,19 @@
     <section id="call-to-action">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center ">
-            <h3 class="cta-title">60+</h3>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center ">
+            <h3 class="cta-title">10+</h3>
             <p class="cta-text">PROJECTS </p>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center ">
-            <h3 class="cta-title">70+</h3>
-            <p class="cta-text">WORKSHOPS</p>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center ">
+            <h3 class="cta-title">20+</h3>
+            <p class="cta-text">MEETUPS</p>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center ">
+          <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center ">
             <h3 class="cta-title">40+</h3>
             <p class="cta-text">EVENTS</p>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center ">
+          </div>-->
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center ">
             <h3 class="cta-title">1</h3>
             <p class="cta-text">VISION</p>
           </div>
@@ -300,15 +300,15 @@
    
       <div class="container">
          <div class="row">
-          <div class="col-lg-4 wow fadeInLeft">
+          <div class="col-lg-4 wow fadeInLeft" style="padding:10px 15px 15px 10px;">
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/RnWWBusoySs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
-          <div class="col-lg-4 wow fadeInRight">
+          <div class="col-lg-4 wow fadeInRight" style="padding:10px 15px 15px 10px;">
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/wTLe8nwJ_Lw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
-          <div class="col-lg-4 wow fadeInRight">
+          <div class="col-lg-4 wow fadeInRight" style="padding:10px 15px 15px 10px;">
               <iframe width="100%" height="315" src="https://www.youtube.com/embed/uxDuZs9k8B0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div> 
         </div>
