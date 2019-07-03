@@ -145,7 +145,7 @@
           <li><a href="./projects.php">Projects</a></li>
           <li><a href="./leaderboard.php">Leaderboard</a></li>
           <li><a href="./timeline.php">Timeline</a></li>
-          <li><a href="./hackathon.php">Hackathon</a></li>
+         <!-- <li><a href="./hackathon.php">Hackathon</a></li>-->
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -429,7 +429,7 @@
 <!--==========================
     hackathon
   ============================-->
-    <section id="hackathon">
+    <!--<section id="hackathon">
       <div class="container">
         <div class="row justify-content-center">
           <h2>Hack O'Latte</h2>        
@@ -439,7 +439,7 @@
       </div>
       
     </section>
-  </main>
+  </main>-->
 
   <!--==========================
     Footer

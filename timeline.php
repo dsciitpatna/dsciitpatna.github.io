@@ -110,7 +110,7 @@ mysqli_close($mysqli);
           <li><a href="./projects.php">Projects</a></li>
           <li><a href="./leaderboard.php">Leaderboard</a></li>
           <li><a href="./timeline.php">Timeline</a></li>
-          <li><a href="./hackathon.php">Hackathon</a></li>
+         <!-- <li><a href="./hackathon.php">Hackathon</a></li>-->
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
