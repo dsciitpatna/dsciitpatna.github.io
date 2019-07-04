@@ -51,6 +51,7 @@
       display:inline;
     }
 
+    
     }
     @media only screen and (min-width: 768px) {
 
@@ -160,8 +161,14 @@
     <div class="intro-text">
       <h2>DSC IIT Patna</h2>
       <p>Empowering student developers to create impact for a better tomorrow</p>  
+      <div class="container">
+        <div class="row">
+          <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 text-center">
       <a href="./projects.php" class="btn-get-started scrollto">View Projects</a> 
       <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a> 
+    </div>
+      </div>
+      </div>
     </div>
 
   </section><!-- #intro -->
@@ -376,20 +383,23 @@
       Contact Section
     ============================-->
     <section id="contact">
-      <div class="container">
+      <div class="container-fluid">
+        
         <div class="fadeInUp d-flex centre">
-          <!-- <div class="col-lg-4 col-md-4"> -->
+          
+           <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
             <div class="desktop">
-               <img  src="img/indiarot.png" style="width:6em;height:13em; float:right;" >
+               <img  src="img/indiarot.png" style="width:8em;height:18em; float:right;" >
               </div>
-              <div class="mobile">
+              
+           </div> 
+         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <div class="contact-about">
+            <div class="mobile">
               <img id="mobile" src="img/india (1).png" style="width:18em;height:7em;float:left;">
               </div>
-          <!-- </div> -->
-         <div class="col-lg-4 col-md-4">
-            <div class="contact-about">
               <h3>DSC IIT Patna</h3>
-              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+              <p>Cras fermentum odio eu feugiat. Justo eget<br> magna fermentum iaculis eu non diam phasellus.<br> Scelerisque felis imperdiet proin fermentum leo. Amet<br> volutpat consequat mauris nunc congue.</p>
               <div class="social-links">
                 <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                 <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -397,11 +407,31 @@
                 <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
                 <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
               </div>
+              <div class="mobile">
+              <div class="info">
+              <div>
+                <i class="ion-ios-location-outline"></i>
+                <p>Indian Institute of Technology Patna<br> Bihta, Patna -801106 (Bihar)</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-email-outline"></i>
+                <p>info@example.com</p>
+              </div>
+
+             <!-- <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p>+1 5589 55488 55s</p>
+              </div> -->
+
+            </div>
+              </div>
             </div>
             
           </div>
-
-          <div class="col-lg-4 col-md-4">
+           
+          <div class="col-lg-3 col-md-3 col-sm-3 col xs-3">
+            <div class="desktop">
             <div class="info">
               <div>
                 <i class="ion-ios-location-outline"></i>
@@ -413,17 +443,17 @@
                 <p>info@example.com</p>
               </div>
 
-              <div>
+              <!--<div>
                 <i class="ion-ios-telephone-outline"></i>
                 <p>+1 5589 55488 55s</p>
-              </div>
+              </div>-->
 
             </div>
-           
+              </div>
           </div>
-
+              </div>
         </div>
-
+              </div>
       </div>
     </section><!-- #contact -->
 
