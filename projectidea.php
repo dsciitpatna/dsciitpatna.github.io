@@ -84,6 +84,8 @@
             font-size: 13px!important;
         }
   </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -124,14 +126,14 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="./">Home</a></li>0
+          <li class="menu-active"><a href="./">Home</a></li>
           <li><a href="./gallery.php">Gallery</a></li>
           <li><a href="./team.php">Team</a></li>
           <li><a href="./#contact">Contact Us</a></li>
           <li><a href="./projects.php">Projects</a></li>
           <li><a href="./leaderboard.php">Leaderboard</a></li>
           <li><a href="./timeline.php">Timeline</a></li>
-          <li><a href="./hackathon.php">Hackathon</a></li>
+         <!-- <li><a href="./hackathon.php">Hackathon</a></li>-->
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>

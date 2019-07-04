@@ -166,3 +166,7 @@
     font-size: 14px;
     text-transform: uppercase;
 }
+
+#footer a{
+    color: #1dc8cd;
+}

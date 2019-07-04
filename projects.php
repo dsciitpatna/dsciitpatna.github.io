@@ -40,7 +40,7 @@
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css?version=1" rel="stylesheet">
 
   <!-- Projects Bootstrap CSS File -->
   <link href="./projects/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -98,7 +98,20 @@
         background:  linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
         color: #fff;
     }
+    #footer a{
+    color: #1dc8cd;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:5px;
+}
+#header a{
+  text-decoration:none;
+}
+#header a:hover{
+  color:inherit;
+}
   </style>
+  
 </head>
 
 <body>
