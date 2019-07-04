@@ -387,19 +387,20 @@
         
         <div class="fadeInUp d-flex centre">
           
-           <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
+           <div class="col-lg-2 col-md-2"> 
             <div class="desktop">
                <img  src="img/indiarot.png" style="width:8em;height:18em; float:right;" >
               </div>
               
            </div> 
-         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+         <div class="col-lg-3 col-md-3">
             <div class="contact-about">
             <div class="mobile">
               <img id="mobile" src="img/india (1).png" style="width:18em;height:7em;float:left;">
               </div>
               <h3>DSC IIT Patna</h3>
-              <p>Cras fermentum odio eu feugiat. Justo eget<br> magna fermentum iaculis eu non diam phasellus.<br> Scelerisque felis imperdiet proin fermentum leo. Amet<br> volutpat consequat mauris nunc congue.</p>
+              <p style="text-align:justify;">We at DSC IITP believe in building a strong community where people can learn and grow together. Our goal is to combine new ideas with technical skills
+              to build something innovative and exemplary. Share your ideas with us and be a part of this amazing family .&nbsp;&nbsp;   #Join_Us !!!  </p>
               <div class="social-links">
                 <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                 <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -430,7 +431,7 @@
             
           </div>
            
-          <div class="col-lg-3 col-md-3 col-sm-3 col xs-3">
+          <div class="col-lg-3 col-md-3">
             <div class="desktop">
             <div class="info">
               <div>
@@ -483,9 +484,9 @@
         <div class="col-lg-3 col-md-3 col-sm-3">
           <strong>Quick Links:</strong>
           <br><br>
-          <a href="https://www.iitp.ac.in/">IIT Patna</a>
+          <a href="https://www.iitp.ac.in/" target="_blank">IIT Patna</a>
           <br>
-          <a href="https://www.iitp.ac.in/hostel/reachIITP.html">Reach Us</a>
+          <a href="https://www.iitp.ac.in/hostel/reachIITP.html" target="_blank">Reach Us</a>
           <br>
           <br>
           <br>
@@ -494,13 +495,13 @@
         <div class="col-lg-3 col-md-3 col-sm-3">
           <strong>Social Links:</strong>
           <br><br>
-          <a href="https://www.facebook.com/dsciitpatna/">
+          <a href="https://www.facebook.com/dsciitpatna/" target="_blank">
           <i class="fa fa-facebook-square">
           </i>
           Developer Student Club
           </a>
           <br>
-          <a href="https://www.facebook.com/iitp.ac.in/">
+          <a href="https://www.facebook.com/iitp.ac.in/" target="_blank">
           <i class="fa fa-facebook-square">
            </i>
           IIT Patna

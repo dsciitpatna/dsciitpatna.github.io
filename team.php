@@ -740,9 +740,9 @@
         <div class="col-lg-3 col-md-3 col-sm-3">
           <strong>Quick Links:</strong>
           <br><br>
-          <a href="https://www.iitp.ac.in/">IIT Patna</a>
+          <a href="https://www.iitp.ac.in/" target="_blank">IIT Patna</a>
           <br>
-          <a href="https://www.iitp.ac.in/hostel/reachIITP.html">Reach Us</a>
+          <a href="https://www.iitp.ac.in/hostel/reachIITP.html" target="_blank">Reach Us</a>
           <br>
           <br>
           <br>
@@ -751,13 +751,13 @@
         <div class="col-lg-3 col-md-3 col-sm-3">
           <strong>Social Links:</strong>
           <br><br>
-          <a href="https://www.facebook.com/dsciitpatna/">
+          <a href="https://www.facebook.com/dsciitpatna/" target="_blank">
           <i class="fa fa-facebook-square">
           </i>
           Developer Student Club
           </a>
           <br>
-          <a href="https://www.facebook.com/iitp.ac.in/">
+          <a href="https://www.facebook.com/iitp.ac.in/" target="_blank">
           <i class="fa fa-facebook-square">
            </i>
           IIT Patna
