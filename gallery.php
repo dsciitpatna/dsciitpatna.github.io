@@ -96,48 +96,48 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="img/gallery/gallery-1.jpg" class="gallery-popup">
-                <img src="img/gallery/gallery-1.jpg" alt="">
+              <a href="img/gallery/img1.jpg" class="gallery-popup">
+                <img src="img/gallery/img1.jpg" alt="">
               </a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="img/gallery/gallery-2.jpg" class="gallery-popup">
-                <img src="img/gallery/gallery-2.jpg" alt="">
+              <a href="img/gallery/img2.jpg" class="gallery-popup">
+                <img src="img/gallery/img2.jpg" alt="">
               </a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="img/gallery/gallery-3.jpg" class="gallery-popup">
-                <img src="img/gallery/gallery-3.jpg" alt="">
+              <a href="img/gallery/img3.jpg" class="gallery-popup">
+                <img src="img/gallery/img3.jpg" alt="">
               </a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="img/gallery/gallery-4.jpg" class="gallery-popup">
-                <img src="img/gallery/gallery-4.jpg" alt="">
+              <a href="img/gallery/img4.jpg" class="gallery-popup">
+                <img src="img/gallery/img4.jpg" alt="">
               </a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="img/gallery/gallery-5.jpg" class="gallery-popup">
-                <img src="img/gallery/gallery-5.jpg" alt="">
+              <a href="img/gallery/img5.jpg" class="gallery-popup">
+                <img src="img/gallery/img5.jpg" alt="">
               </a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="img/gallery/gallery-6.jpg" class="gallery-popup">
-                <img src="img/gallery/gallery-6.jpg" alt="">
+              <a href="img/gallery/img6.jpg" class="gallery-popup">
+                <img src="img/gallery/img6.jpg" alt="">
               </a>
             </div>
           </div>
