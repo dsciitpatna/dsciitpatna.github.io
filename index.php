@@ -417,7 +417,7 @@
 
               <div>
                 <i class="ion-ios-email-outline"></i>
-                <p>info@example.com</p>
+                <p>dsc@iitp.ac.in</p>
               </div>
 
              <!-- <div>
@@ -441,7 +441,7 @@
 
               <div>
                 <i class="ion-ios-email-outline"></i>
-                <p>info@example.com</p>
+                <p>dsc@iitp.ac.in</p>
               </div>
 
               <!--<div>
