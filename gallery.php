@@ -104,8 +104,8 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="img/gallery/img2.jpg" class="gallery-popup">
-                <img src="img/gallery/img2.jpg" alt="">
+              <a href="img/gallery/img2(1).jpg" class="gallery-popup">
+                <img src="img/gallery/img2(1).jpg" alt="">
               </a>
             </div>
           </div>
