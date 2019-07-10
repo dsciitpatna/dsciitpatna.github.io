@@ -690,37 +690,20 @@
                         <div class="container">
                             <h5 class="text-success"><?php echo $deleteprojectideasuccess?></h5>
                             <h5 class="text-danger"><?php echo $deleteprojectideafailure?></h5>
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Organization</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Delete Idea</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php foreach ($projectIdeas as $projectIdea) : ?>
-                                        <tr>
-                                            <th scope="row"><?php echo $projectIdea['name'] ?></th>
-                                            <th scope="row">
-                                                <a href="mailto:<?php echo $projectIdea['email'] ?>">
-                                                <?php echo $projectIdea['email'] ?>
-                                                </a>
-                                            </th>
-                                            <td><?php echo $projectIdea['organization'] ?></td>
-                                            <td><?php echo $projectIdea['title'] ?></td>
-                                            <td>
-                                            <form action="" method="POST">
-                                                <input type="hidden" name="id" value="<?php echo $projectIdea['id']?>"/>
-                                                <button type="submit" name="deleteprojectidea" class="btn btn-primary">Delete</button>
-                                            </form>
-                                            </td>
-                                        </tr>
-                                    <?php endforeach; ?>
-                                </tbody>
-                            </table>
+                                <?php foreach ($projectIdeas as $projectIdea) : ?>
+                                    <div style="margin: 50px auto">
+                                        <p><strong>Name:</strong> <?php echo $projectIdea['name'] ?></p>
+                                        <a href="mailto:<?php echo $projectIdea['email'] ?>"><p><strong>Emaail:</strong> <?php echo $projectIdea['email'] ?></p></a>
+                                        <p><strong>Organization:</strong> <?php echo $projectIdea['organization'] ?></p>
+                                        <p><strong>Title:</strong> <?php echo $projectIdea['title'] ?></p>
+                                        <p><strong>Decsription:</strong> <?php echo $projectIdea['description'] ?></p>
+                                        <p><strong>Tags:</strong> <?php echo $projectIdea['tags'] ?></p>
+                                        <form action="" method="POST">
+                                            <input type="hidden" name="id" value="<?php echo $projectIdea['id']?>"/>
+                                            <button type="submit" name="deleteprojectidea" class="btn btn-primary">Delete</button>
+                                        </form>
+                                    </div>
+                                <?php endforeach; ?>
                         </div>
                         <br><br>
                     </div>
