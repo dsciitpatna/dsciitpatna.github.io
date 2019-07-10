@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2019 at 10:03 PM
+-- Generation Time: Jul 10, 2019 at 02:17 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -61,9 +61,8 @@ CREATE TABLE `announcements` (
 --
 
 INSERT INTO `announcements` (`id`, `title`, `description`, `date`) VALUES
-(15, 'Announcement 1', 'lorem ipsum dolar slit amet lorem ipsum dolar slit amet lorem ipsum dolar slit amet', '2019-06-12 01:25:17'),
-(16, 'Announcement 2', 'lorem ipsum dolar slit amet lorem ipsum dolar slit amet lorem ipsum dolar slit amet', '2019-06-12 01:26:57'),
-(17, 'Announcement 3', 'lorem ipsum dolar slit amet lorem ipsum dolar slit amet lorem ipsum dolar slit amet', '2019-06-12 01:27:28');
+(18, 'DSC\'s website has been completed successfully!!!', 'Hola folks! DSC IIT-P feels immense joy to announce that our website has been fully developed and its in complete working condition.', '2019-07-10 17:28:12'),
+(19, 'DSC Leaderboard has been setup.', 'Students can now view their respective points on the leaderboard. ', '2019-07-10 17:29:50');
 
 -- --------------------------------------------------------
 
@@ -106,11 +105,7 @@ CREATE TABLE `leaderboard` (
 --
 
 INSERT INTO `leaderboard` (`id`, `name`, `rollno`, `points`, `dateCreated`) VALUES
-(1, 'asdf', '1801zz01', 50, '2019-05-15 11:32:45'),
-(2, 'feut 3fred', '1801zz02', 200, '2019-05-15 11:33:19'),
-(4, 'aman', '1801zz34', 520, '2019-05-15 11:42:49'),
-(6, 'Ashwani', '1801EE13', 500, '2019-05-15 12:17:02'),
-(7, 'Ashwani Cash', '1801ZZ69', 0, '2019-06-08 11:58:25');
+(6, 'Ashwani', '1801EE13', 500, '2019-05-15 12:17:02');
 
 -- --------------------------------------------------------
 
@@ -135,9 +130,7 @@ CREATE TABLE `projectideas` (
 --
 
 INSERT INTO `projectideas` (`id`, `date`, `name`, `organization`, `organization_url`, `title`, `description`, `tags`, `email`) VALUES
-(1, '2019-06-11 21:22:25', 'Ashwani Yadav', 'IIT Patna', 'https://www.iitp.ac.in/gymkhana/', 'Udne wali car', 'Wanna fly with me', 'WEb, ReactJS', 'abc@gmail.com'),
-(8, '2019-06-11 23:02:10', 'John Doe', 'IIT B', 'https://www.cdewcfewfc.com', 'EHR', 'sfegfre erbtenb', 'efwrg, efwgv, fegefw', 'xyz@gmail.com'),
-(10, '2019-06-11 23:15:43', 'Ash Yadav', 'IIT P', 'https://www.cdewcfewfc.com', 'safewvewbr reb', 'wegfwrb gwrgbwr', '', 'zxcv@gmail.com');
+(1, '2019-06-11 21:22:25', 'Ashwani Yadav', 'IIT Patna', 'https://www.iitp.ac.in/gymkhana/', 'Udne wali car', 'Wanna fly with me', 'WEb, ReactJS', 'abc@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -187,10 +180,7 @@ CREATE TABLE `timeline` (
 --
 
 INSERT INTO `timeline` (`id`, `title`, `short_desc`, `long_desc`, `date`) VALUES
-(2, 'title 2', 'short desc 2', 'long desc 2', '2019-05-02'),
-(6, 'title 3', 'sdewghtyju wreht ', 'efrtrh hthpiwrguwhgu wrhguq', '2019-05-14'),
-(7, 'holi kab hai', 'kab hai holi', 'lorem ipsum lorem ipsumlorem ipsumlorem ipsum', '2019-05-01'),
-(9, 'title 4', 'wde ewfw ef ', 'dqwwiyefgy3 f4gefy8gy7fg479yr927f f4ifg497gf974', '2019-06-30');
+(10, 'DSC\'s website has been completed successfully!!!', 'Hola folks! DSC IIT-P feels immense joy to announce that our website has been fully developed and its in complete working condition. ', 'Hola folks! DSC IIT-P feels immense joy to announce that our website has been fully developed and its in complete working condition. ', '2019-07-10');
 
 --
 -- Indexes for dumped tables
@@ -252,7 +242,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `announcements`
 --
 ALTER TABLE `announcements`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `buddingprojects`
@@ -270,19 +260,19 @@ ALTER TABLE `leaderboard`
 -- AUTO_INCREMENT for table `projectideas`
 --
 ALTER TABLE `projectideas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `projects`
 --
 ALTER TABLE `projects`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `timeline`
 --
 ALTER TABLE `timeline`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

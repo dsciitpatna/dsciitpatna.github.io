@@ -746,7 +746,7 @@
                                 <tbody>
                                     <?php foreach ($announcements as $announcement) : ?>
                                         <tr>
-                                            <th scope="row"><?php echo $announcement['title'] ?></th>
+                                            <td scope="row"><?php echo $announcement['title'] ?></td>
                                             <td><?php echo $announcement['date'] ?></td>
                                             <td>
                                                 <form action="" method="POST">
