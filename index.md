@@ -10,5 +10,6 @@
 
 **Steps**
 - Go to https://go.qwiklabs.com/cloud-study-jams-2019
-- Click enroll
+- Click enroll for GCP Essentials
 - Enter Study JAM Code: ```1s-patna-8741```
+- 
