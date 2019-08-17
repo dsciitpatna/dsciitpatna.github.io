@@ -1,5 +1,7 @@
 ## Cloudfest
 
+[Register](https://docs.google.com/forms/d/e/1FAIpQLScAf8y32txCrSViMfzzhTQfJYrQp7-ifXkQa-yGSUJLI1Pthg/viewform)
+
 [PPT](https://www.slideshare.net/FrancescoMarchitelli1/google-cloud-platform-47074110)
 
 
