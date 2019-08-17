@@ -1,6 +1,6 @@
 ## Cloudfest
 
-[PPT](bit.ly/2KQg9FH)
+[PPT](https://www.slideshare.net/FrancescoMarchitelli1/google-cloud-platform-47074110)
 
 
 [TED Video](https://www.ted.com/talks/sajan_saini_the_hidden_network_that_makes_the_internet_possible/transcript?language=en)
