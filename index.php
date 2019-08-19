@@ -1,20 +1,3 @@
-<?php
-  require('config/db.php');
-  session_start();
-
-  $query = 'SELECT * FROM announcements ORDER BY date DESC';
-  $result = mysqli_query($mysqli, $query);
-  $announcements = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-  if(sizeof($announcements) >= 5) {
-    $announcements=array_slice($announcements,0,5);
-  }
-
-  mysqli_free_result($result);
-  mysqli_close($mysqli);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -244,14 +227,18 @@
     <section id="features">
       <div class="container wow fadeInRight">
         <h3 class="text-center announcement-header" style="text-decoration">Announcements</h3>
-        <?php foreach ($announcements as $announcement) : ?>
           <div class="container">
-            <h5 style="text-decoration: underline"><i class='fas fa-check-circle text-success'></i> <?php echo $announcement['title']?></h5>
-            <p><?php echo $announcement['description'] ?> <br>
-            <small><?php echo $announcement['date'] ?></small>
+            <h5 style="text-decoration: underline"><i class='fas fa-check-circle text-success'></i>  DSC Leaderboard has been setup.</h5>
+            <p>Students can now view their respective points on the leaderboard.  <br>
+            <small>2019-07-10 17:29:50</small>
             </p>
           </div>
-        <?php endforeach; ?>
+          <div class="container">
+            <h5 style="text-decoration: underline"><i class='fas fa-check-circle text-success'></i>	DSC's website has been completed successfully!!!</h5>
+            <p>Hola folks! DSC IIT-P feels immense joy to announce that our website has been fully developed and its in complete working condition.<br>
+            <small>2019-07-10 17:28:12</small>
+            </p>
+          </div>
       </div>
 
     </section><!-- #features -->

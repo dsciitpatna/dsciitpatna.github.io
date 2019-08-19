@@ -1,23 +1,31 @@
 <?php
-	require('config/db.php');
-	session_start();
+	// require('config/db.php');
+	// session_start();
 
-	// Create Query
-	$query = 'SELECT * FROM leaderboard ORDER BY points DESC';
+	// // Create Query
+	// $query = 'SELECT * FROM leaderboard ORDER BY points DESC';
 
-	// Get Result
-	$result = mysqli_query($mysqli, $query);
+	// // Get Result
+	// $result = mysqli_query($mysqli, $query);
 
-	// Fetch Data
-	$posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
+	// // Fetch Data
+	// $posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-	// Free Result
-	mysqli_free_result($result);
+	// // Free Result
+	// mysqli_free_result($result);
 	
-	// Close Connection
-	mysqli_close($mysqli);
+	// // Close Connection
+	// mysqli_close($mysqli);
 	$class="";
 	$bgcolor="";
+	$posts = array(
+		array('points' => 612, 'name' => 'Pranay', 'rollno' => '1801CS38'),
+		array('points' => 500, 'name' => 'Ashwini', 'rollno' => '1801EE13'),
+		array('points' => 150, 'name' => 'Ileana', 'rollno' => '1801ME70'),
+		array('points' => 51, 'name' => 'Ritwiz', 'rollno' => '1801CS39'),
+		array('points' => 15, 'name' => 'Bell', 'rollno' => '1801CS73')
+	);
+
 ?>
 
 <?php include('templates/header.php'); ?>
@@ -58,6 +66,7 @@
 			</tr>
 			</thead>
 			<tbody>
+				
 				<?php $i=1;
 					foreach($posts as $post) : ?>
 						<?php 

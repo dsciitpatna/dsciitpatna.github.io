@@ -1,24 +1,3 @@
-<?php
-require('config/db.php');
-session_start();
-
-// Create Query
-$query = 'SELECT * FROM timeline ORDER BY date DESC';
-
-// Get Result
-$result = mysqli_query($mysqli, $query);
-
-// Fetch Data
-$events = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-// Free Result
-mysqli_free_result($result);
-
-// Close Connection
-mysqli_close($mysqli);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -130,10 +109,6 @@ mysqli_close($mysqli);
     <div class="row">
       <div class="col-lg-12">
         <ul class="timeline">
-
-        <?php $i = 0;
-        foreach ($events as $event) : ?>
-          <?php if ( $i%2==0 ) { $i++; ?>
             <li class='timeline-straight'>
             <a href="">
               <div class='timeline-image'>
@@ -142,35 +117,16 @@ mysqli_close($mysqli);
             </a>
             <div class='timeline-panel'>
               <div class='timeline-heading'>
-                <h4 class='date'><?php echo $event['date']?></h4>
+                <h4 class='date'>2019-07-10</h4>
                 <hr>
-                <h4 class='subheading title'><?php echo $event['title']?></h4>
+                <h4 class='subheading title'>DSC's website has been completed successfully!!!</h4>
               </div>
               <div class='timeline-body'>
-                <p class='details short_desc'><?php echo $event['short_desc']?></p>
-                <p class='details long_desc'><?php echo $event['long_desc']?></p>
+                <p class='details short_desc'>Hola folks! DSC IIT-P feels immense joy to announce that our website has been fully developed and its in complete working condition.</p>
+                <p class='details long_desc'>Hola folks! DSC IIT-P feels immense joy to announce that our website has been fully developed and its in complete working condition.</p>
               </div>
             </div>
           </li>
-        <?php } else { $i++; ?>
-          <li class='timeline-inverted'><a href="">
-              <div class='timeline-image'><img class='rounded-circle img-fluid img_url' src="img/1_myY345H2376N21kQ8oeyNw.jpg" alt="" id="circle"></div>
-            </a>
-            <div class='timeline-panel'>
-              <div class='timeline-heading'>
-                <h4 class='date'><?php echo $event['date']?></h4>
-                <hr>
-                <h4 class='subheading title'><?php echo $event['title']?></h4>
-              </div>
-              <div class='timeline-body'>
-                <p class='details short_desc'><?php echo $event['short_desc']?></p>
-                <p class='details long_desc'><?php echo $event['long_desc']?></p>
-              </div>
-            </div>
-          </li>
-          <?php } ?>
-
-        <?php endforeach; ?>
         </ul>
       </div>
     </div>

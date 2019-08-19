@@ -1,17 +1,15 @@
 <?php
-  require('config/db.php');
-  session_start();
-
-  $query = 'SELECT * FROM projects ORDER BY created_date DESC';
-  $result = mysqli_query($mysqli, $query);
-  $projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
-  $query = 'SELECT * FROM buddingProjects ORDER BY created_date DESC';
-  $result = mysqli_query($mysqli, $query);
-  $buddingProjects = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-  mysqli_free_result($result);
-  mysqli_close($mysqli);
-
+  $projects = array(
+      array('title' => 'Web 1', 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quis!', 'github_link' => 'https://github.com/dsciitpatna/', 'filter' => 'web', 'status' => 1),
+      array('title' => 'App 1', 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quis!', 'github_link' => 'https://github.com/dsciitpatna/', 'filter' => 'app', 'status' => 0),
+      array('title' => 'Blockchain & Cryptocurrency', 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quis!', 'github_link' => 'https://github.com/dsciitpatna/', 'filter' => 'block', 'status' => 0),
+      array('title' => 'IOT 1', 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quis!', 'github_link' => 'https://github.com/dsciitpatna/', 'filter' => 'iot', 'status' => 0),
+      array('title' => 'Cloud 1', 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quis!', 'github_link' => 'https://github.com/dsciitpatna/', 'filter' => 'cloud', 'status' => 0),
+      array('title' => 'App 2', 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quis!', 'github_link' => 'https://github.com/dsciitpatna/', 'filter' => 'app', 'status' => 1)
+  );
+  $buddingProjects = array(
+    array('title' => 'Budding app', 'description'=> 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, facilis.', 'filter' => 'app')
+  );
 ?>
 
 <!DOCTYPE html>
