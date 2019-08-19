@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DSC Leaderboard</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link rel="stylesheet" href="public/main.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="./leaderboard.html">DSC Leaderboard</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<h5 class="text-center">Description</h5>
+		<table class="table table-hover text-center shadow">
+			<thead>
+				<tr>
+					<th>0 >= Points <= 50</th> <th>50 >= Points <= 100</th> <th>100 >= Points <= 250</th> <th>250 >=
+									Points <= 500</th> <th>500 >= Points <= 650</th> </tr> </thead> <tbody>
+				<tr>
+					<td><i class="fas fa-baby"></i></td>
+					<td><i class="fas fa-robot"></i></td>
+					<td><i class="fas fa-heart"></i></td>
+					<td><i class="fas fa-crown"></i></td>
+					<td><i class="fas fa-gem"></i></td>
+				</tr>
+				</tbody>
+		</table>
+		<hr>
+	</div>
+
+	<div class="container">
+		<table class="table table-hover text-center shadow bg-light">
+			<thead>
+				<tr>
+					<th>Icon</th>
+					<th>Rank</th>
+					<th>Name</th>
+					<th>Roll No.</th>
+					<th>Points</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr style="background: #E0FFFF">
+					<td><i class="fas fa-gem"></i></td>
+					<td>1</td>
+					<td>Pranay</td>
+					<td>1801CS38</td>
+					<td>612</td>
+				</tr>
+				<tr style="background: #ADFF2F">
+					<td><i class="fas fa-crown"></i></td>
+					<td>2</td>
+					<td>Ashwini</td>
+					<td>1801EE13</td>
+					<td>500</td>
+				</tr>
+				<tr style="background: #FAFAD2">
+					<td><i class="fas fa-heart"></i></td>
+					<td>3</td>
+					<td>Ileana</td>
+					<td>1801CS77</td>
+					<td>201</td>
+				</tr>
+				<tr style="background: #FFD700">
+					<td><i class="fas fa-robot"></i></td>
+					<td>4</td>
+					<td>Ritwiz</td>
+					<td>1801CS39</td>
+					<td>73</td>
+				</tr>
+				<tr style="background: #FA8072">
+					<td><i class="fas fa-baby"></i></td>
+					<td>5</td>
+					<td>Akshay</td>
+					<td>1801CS79</td>
+					<td>18</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function () {
+
+			const tabs = document.querySelector('.tabs');
+			const panels = document.querySelectorAll('.panel');
+			tabs.addEventListener('click', (e) => {
+				if (e.target.tagName == 'BUTTON') {
+					const targetPanel = document.querySelector(e.target.dataset.target);
+					Array.from(panels).forEach((panel) => {
+						if (panel == targetPanel) {
+							panel.classList.add('active');
+						} else {
+							panel.classList.remove('active');
+						}
+					});
+				}
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.nav button').each(function () {
+				$(this).click(function () {
+					$(this).siblings().removeClass('active'); // if you want to remove class from all sibling buttons
+					$(this).addClass('active');
+				});
+			});
+		});
+	</script>
+
+</body>
+
+</html>

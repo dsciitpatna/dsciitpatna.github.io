@@ -13,7 +13,8 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i"
+    rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,18 +29,16 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/timeline.css" rel="stylesheet">
   <style>
-   #circle
-    {
-      border-radius:50% 50% 50% 50%;  
-      width:100%;
-      height:100%;
-   }
-   .timeline > li .timeline-panel {
-      background-color:#E8F8F5;
-      border-radius:10px;
+    #circle {
+      border-radius: 50% 50% 50% 50%;
+      width: 100%;
+      height: 100%;
     }
-    
 
+    .timeline>li .timeline-panel {
+      background-color: #E8F8F5;
+      border-radius: 10px;
+    }
   </style>
 </head>
 
@@ -48,14 +47,14 @@
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
   <script>
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
       FB.init({
         xfbml: true,
         version: 'v3.3'
       });
     };
 
-    (function(d, s, id) {
+    (function (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s);
@@ -77,24 +76,24 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-      <h1><a href="./"><img src="img/logo.png" alt="" title="" width="70%" id='logoimg'></a></h1>
+        <h1><a href="./"><img src="img/logo.png" alt="" title="" width="70%" id='logoimg'></a></h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-        <li class="menu-active"><a href="./">Home</a></li>
-          <li><a href="./gallery.php">Gallery</a></li>
-          <li><a href="./team.php">Team</a></li>
+          <li class="menu-active"><a href="./">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./team.html">Team</a></li>
           <li><a href="./#contact">Contact Us</a></li>
-          <li><a href="./projects.php">Projects</a></li>
-          <li><a href="./leaderboard.php">Leaderboard</a></li>
-          <li><a href="./timeline.php">Timeline</a></li>
-         <!-- <li><a href="./hackathon.php">Hackathon</a></li>-->
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./leaderboard.html">Leaderboard</a></li>
+          <li><a href="./timeline.html">Timeline</a></li>
+          <!-- <li><a href="./hackathon.html">Hackathon</a></li>-->
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
- 
+
 
   <!--==========================
       Timeline Section
@@ -109,7 +108,7 @@
     <div class="row">
       <div class="col-lg-12">
         <ul class="timeline">
-            <li class='timeline-straight'>
+          <li class='timeline-straight'>
             <a href="">
               <div class='timeline-image'>
                 <img class=' rounded-circle img-fluid img_url' src="img/dsccover.jpg" alt="" id="circle">
@@ -122,8 +121,10 @@
                 <h4 class='subheading title'>DSC's website has been completed successfully!!!</h4>
               </div>
               <div class='timeline-body'>
-                <p class='details short_desc'>Hola folks! DSC IIT-P feels immense joy to announce that our website has been fully developed and its in complete working condition.</p>
-                <p class='details long_desc'>Hola folks! DSC IIT-P feels immense joy to announce that our website has been fully developed and its in complete working condition.</p>
+                <p class='details short_desc'>Hola folks! DSC IIT-P feels immense joy to announce that our website has
+                  been fully developed and its in complete working condition.</p>
+                <p class='details long_desc'>Hola folks! DSC IIT-P feels immense joy to announce that our website has
+                  been fully developed and its in complete working condition.</p>
               </div>
             </div>
           </li>
@@ -139,7 +140,7 @@
   ============================-->
   <footer id="footer">
     <div class="container">
-        
+
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-3">
           <strong>Quick Links:</strong>
@@ -150,47 +151,48 @@
           <br>
           <br>
           <br>
-          
+
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
           <strong>Social Links:</strong>
           <br><br>
           <a href="https://www.facebook.com/dsciitpatna/" target="_blank">
-          <i class="fa fa-facebook-square">
-          </i>
-          Developer Student Club
+            <i class="fa fa-facebook-square">
+            </i>
+            Developer Student Club
           </a>
           <br>
           <a href="https://www.facebook.com/iitp.ac.in/" target="_blank">
-          <i class="fa fa-facebook-square">
-           </i>
-          IIT Patna
+            <i class="fa fa-facebook-square">
+            </i>
+            IIT Patna
           </a>
           <br>
           <br>
           <br>
-          
+
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
-         <strong>Back To:</strong>
-         <br><br>
-         <a href="./" class="scrollto">Home</a>
-         <br>
-         <a href="./projects.php" class="scrollto">Projects</a>
-         <br>
+          <strong>Back To:</strong>
+          <br><br>
+          <a href="./" class="scrollto">Home</a>
+          <br>
+          <a href="./projects.html" class="scrollto">Projects</a>
+          <br>
           <br>
           <br>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
-         <strong>Copyright ©</strong> 
-        <br>
-        <strong>Developer Student Club</strong>
-         <br>
-        <strong>Indian Institute of Technology, Patna</strong>
-        <br>
-         <a href="https://docs.google.com/forms/d/e/1FAIpQLScLhe6GrLKCzUmXK8KUSCX_DUYaRXHYkPNtxlQJ2aOPzZCaIA/viewform?usp=sf_link" target="_blank" class="btn-get-started scrollto" >Submit A Project Idea</a>  
-         </div>
-         <br><br>
+          <strong>Copyright ©</strong>
+          <br>
+          <strong>Developer Student Club</strong>
+          <br>
+          <strong>Indian Institute of Technology, Patna</strong>
+          <br>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScLhe6GrLKCzUmXK8KUSCX_DUYaRXHYkPNtxlQJ2aOPzZCaIA/viewform?usp=sf_link"
+            target="_blank" class="btn-get-started scrollto">Submit A Project Idea</a>
+        </div>
+        <br><br>
       </div>
     </div>
   </footer><!-- #footer -->
