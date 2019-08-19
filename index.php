@@ -148,7 +148,7 @@
         <div class="row">
           <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 text-center">
       <a href="./projects.php" class="btn-get-started scrollto">View Projects</a> 
-      <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a> 
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScLhe6GrLKCzUmXK8KUSCX_DUYaRXHYkPNtxlQJ2aOPzZCaIA/viewform?usp=sf_link" target="_blank" class="btn-get-started scrollto" >Submit A Project Idea</a> 
     </div>
       </div>
       </div>
@@ -515,7 +515,7 @@
          <br>
         <strong>Indian Institute of Technology, Patna</strong>
         <br>
-         <a href="./projectidea.php" class="btn-get-started scrollto" >Submit A Project Idea</a>  
+         <a href="https://docs.google.com/forms/d/e/1FAIpQLScLhe6GrLKCzUmXK8KUSCX_DUYaRXHYkPNtxlQJ2aOPzZCaIA/viewform?usp=sf_link" target="_blank" class="btn-get-started scrollto" >Submit A Project Idea</a>  
          </div>
          <br><br>
       </div>

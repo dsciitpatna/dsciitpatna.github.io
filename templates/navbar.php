@@ -10,15 +10,6 @@
         <li class="nav-item active">
           <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
         </li>
-        <?php if(isset($_SESSION['email'])) { ?>
-        <li class="nav-item">
-          <a class="nav-link" href="./admin.php">Admin Page</a>
-        </li>
-        <?php } else { ?>
-          <li class="nav-item">
-          <a class="nav-link" href="./adminlogin.php">Admin Login</a>
-        </li>
-        <?php } ?>
       </ul>
 
     </div>

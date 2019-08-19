@@ -1,21 +1,5 @@
 <?php
-	// require('config/db.php');
-	// session_start();
-
-	// // Create Query
-	// $query = 'SELECT * FROM leaderboard ORDER BY points DESC';
-
-	// // Get Result
-	// $result = mysqli_query($mysqli, $query);
-
-	// // Fetch Data
-	// $posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-	// // Free Result
-	// mysqli_free_result($result);
 	
-	// // Close Connection
-	// mysqli_close($mysqli);
 	$class="";
 	$bgcolor="";
 	$posts = array(
